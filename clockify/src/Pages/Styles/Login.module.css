@@ -1,0 +1,12 @@
+.grid{
+    height: 100%;
+    width: 99%;
+    left: 0;
+    top: 0;
+    margin:auto;
+    overflow: hidden;
+    position: fixed;
+    display:grid;
+    grid-template-columns:65% 35%;
+    grid-template-rows: 100%;
+}
