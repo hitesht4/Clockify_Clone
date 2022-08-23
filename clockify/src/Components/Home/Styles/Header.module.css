@@ -1,0 +1,12 @@
+.Headers{
+    padding:40px;
+}
+.Headers>h5{
+    color:#5a6b7b;
+    padding-top: 8px;
+}
+.Headers>p{
+    color:#5a6b7b;
+    padding-top: 8px;
+    font-weight: lighter;
+}

@@ -1,0 +1,48 @@
+.experiences{
+   display: grid;
+   width:100%;
+   grid-template-columns: repeat(5,1fr);
+   grid-template-rows: repeat(3,150px);
+   gap:10px 10px;
+}
+
+.exp{
+    box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+    width:290px;
+    text-align: start;
+    padding:10px;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+.exp:hover{
+    transform: scale(1.05);
+    transition: 0.8s;
+    cursor:pointer;
+}
+.exp>p:nth-child(1){
+  font-weight: bold;
+  font-size: 15px;
+  margin-bottom: -1px;
+}
+.exp>p:nth-child(2){
+  font-weight: bold;
+  color:gold;
+  margin-bottom: -1px;
+}
+.exp>p:nth-child(3){
+  font-size: 12px;
+}
+.exp>p:nth-child(4){
+  font-style: Italic;
+  font-size: 10px;
+}
+.Logos{
+  height:80px;
+  padding-bottom: 30px;
+}
+.Logos>img{
+  width:100%;
+  height: 100%;
+  overflow-wrap: normal;
+}

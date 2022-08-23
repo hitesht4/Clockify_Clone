@@ -1,0 +1,26 @@
+.Apps{
+    width:70%;
+    margin:auto;
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    gap:20px 20px;
+    background-color: #f2f6f8;
+}
+.AppsChild{
+    padding:20px;
+}
+.AppsChild>button{
+    width:100px;
+    padding:6px;
+    margin:8px;
+    border:1px solid #03a9f4;
+    background-color: white;
+    color:#03a9f4;
+}
+.AppsChild>h6{
+    margin-top: 10px;
+}
+.AppsChild>button:hover{
+    background-color: #3393dd;
+    color:white;
+}

@@ -1,0 +1,12 @@
+.Section{
+    width:50%;
+    margin:40px auto;
+    padding:20px;
+}
+.Section>p{
+    font-size: 14px;
+    margin: 20px;
+}
+.Section>h6{
+    margin: 20px;
+}
