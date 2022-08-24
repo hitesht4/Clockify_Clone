@@ -1,0 +1,7 @@
+.div{
+    background-color: rgb(255, 255, 255);
+    height:fit-content;
+    width: 85%;
+    margin: auto;
+    /* border:3px solid black; */
+}
