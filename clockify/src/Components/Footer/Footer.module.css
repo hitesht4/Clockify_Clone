@@ -1,0 +1,12 @@
+.container{
+    display: flex;
+    gap: 1rem;
+    text-align: left;
+    padding: 5px 10px;
+    width: 80%;
+    margin: auto;
+}
+.container>div:nth-child(1){
+    width: 30%;
+    margin-right: 150px;
+}
