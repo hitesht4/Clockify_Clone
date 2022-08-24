@@ -1,5 +1,5 @@
 .experiences{
-   display: grid;
+   display:grid;
    width:100%;
    grid-template-columns: repeat(5,1fr);
    grid-template-rows: repeat(3,150px);
@@ -8,7 +8,7 @@
 
 .exp{
     box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
-    width:290px;
+    /* width:290px; */
     text-align: start;
     padding:10px;
     display: flex;
@@ -45,4 +45,24 @@
   width:100%;
   height: 100%;
   overflow-wrap: normal;
+}
+.ContainerExp{
+  text-align: center;
+  padding:10px 0px 80px 0px;
+}
+
+@media only screen and (min-width:480px)  and (max-width:950px){
+   .experiences{
+   grid-template-columns: repeat(3,1fr);
+   grid-gap:25px 20px;
+}
+}
+@media only screen and (min-width:0px)  and (max-width:479px){
+  .experiences{
+   grid-template-columns: repeat(2,1fr);
+   
+}
+.exp{
+    width:200px;
+}
 }
