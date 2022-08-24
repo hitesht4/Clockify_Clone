@@ -51,18 +51,18 @@ body {
     margin-bottom: 7px;
   }
   .apps__feature-box:hover::after{
-    content: attr(data-tip);
+    /* content: attr(data-tip);
     color: red;   
     display: block;
     position:unset;
-    top: 20%;
+    top: 20%; */
     /* margin-bottom: 25px; */
   }
   .tooltip {
     position: relative;
-    /* display: inline-block; */
+    display: inline-block;
   }
-  .tooltip .tooltiptext {
+  .tooltiptext {
     visibility: hidden;
     text-align: left;
     width: 180px;
@@ -79,7 +79,7 @@ body {
     margin-left: -111px;
     box-shadow: 1px 2px 4px rgb(0 0 0 / 20%);
   }
-  .tooltip .tooltiptext:hover::after {
+  /* .tooltip .tooltiptext::after {
     content: "";
     position: absolute;
     top: 100%;
@@ -88,7 +88,7 @@ body {
     border-width: 5px;
     border-style: solid;
     border-color: black transparent transparent transparent;
-  }
+  } */
   
   .download_browser_extension, .download_desktop_app, .download_chat_app {
     display: flex;
@@ -97,11 +97,9 @@ body {
     margin-bottom: 100px;
     margin-left: auto;
     max-width: 860px;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
     align-items: center;
-    -ms-flex-pack: distribute;
     justify-content: space-around;
+
   }
   .browser_extension_img {
     text-align: right;
@@ -194,7 +192,21 @@ body {
     font-size: 13px;
     color: #01579B;
   }
-  .NumberOfUsers{
-  
+
+  @media (max-width: 1445px) {
+    .download_browser_extension, .download_desktop_app, .download_chat_app{
+      margin-top: 50px;
+      display: block;
+    }
+    .browser_extension_second, .download_desktop_app_second, .download_chat_app_second{
+      margin-top: 40px;
+      display: block;
+      padding-right: 40px;
+      align-items: center;
+      justify-content: center;
+    }
+   
   }
+  
+
   

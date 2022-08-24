@@ -8,8 +8,11 @@ import { ReactComponent as LinuxSvg } from "../../assets/images/download-app-lin
 import { ReactComponent as IosSvg } from "../../assets/images/app-store-ios.svg";
 import { ReactComponent as AndroidSvg } from "../../assets/images/play-store-android.svg";
 import { ReactComponent as SignedSvg } from "../../assets/images/signed-up-icon.svg";
+import { Link } from "react-router-dom";
+
 
 const DownloadPage = () => {
+
     return (
         <div className="download_main">
           <div className="download_header">
@@ -18,18 +21,18 @@ const DownloadPage = () => {
               Install Clockify and track time from anywhere — everything is synced
               online.
             </p>
-            <p className="apps__header__download">
-              <a style={{textDecoration:"none"}} href="chrome-time-tracking">Chrome</a> &nbsp;•&nbsp;{" "}
-              <a style={{textDecoration:"none"}} href="firefox-time-tracking">Firefox</a> &nbsp;•&nbsp;{" "}
-              <a style={{textDecoration:"none"}} href="/edge-time-tracking">Edge</a> &nbsp;•&nbsp;{" "}
-              <a style={{textDecoration:"none"}} href="mac-time-tracking">Mac</a> &nbsp;•&nbsp;{" "}
-              <a style={{textDecoration:"none"}} href="/windows-time-tracking">Windows</a> &nbsp;•&nbsp;{" "}
-              <a style={{textDecoration:"none"}} href="/linux-time-tracking">Linux</a> &nbsp;•&nbsp;{" "}
-              <a style={{textDecoration:"none"}} href="/android-time-tracking">Android</a> &nbsp;•&nbsp;{" "}
-              <a style={{textDecoration:"none"}} href="/iphone-time-tracking">iOS</a>
+            <p className="appLink__header__download">
+              <Link style={{textDecoration:"none"}} to="/chrome-time-tracking">Chrome</Link> &nbsp;•&nbsp;{" "}
+              <Link style={{textDecoration:"none"}} to="/">Firefox</Link> &nbsp;•&nbsp;{" "}
+              <Link style={{textDecoration:"none"}} to="/">Edge</Link> &nbsp;•&nbsp;{" "}
+              <Link style={{textDecoration:"none"}} to="/">Mac</Link> &nbsp;•&nbsp;{" "}
+              <Link style={{textDecoration:"none"}} to="/">Windows</Link> &nbsp;•&nbsp;{" "}
+              <Link style={{textDecoration:"none"}} to="/">Linux</Link> &nbsp;•&nbsp;{" "}
+              <Link style={{textDecoration:"none"}} to="/">Android</Link> &nbsp;•&nbsp;{" "}
+              <Link style={{textDecoration:"none"}} to="/">iOS</Link>
             </p>
             <p className="apps__header__download">
-              <span data-tip="Stop timer from tracking time you spend away from your computer.  Mac, Windows, Chrome" className="apps__feature-box tooltip">
+              <span className="apps__feature-box">
                 Idle detection
                 <span className="tooltiptext">
                   Stop timer from tracking time you spend away from your computer.
@@ -39,8 +42,8 @@ const DownloadPage = () => {
                   </span>
                 </span>
               </span>
-              <span data-tip=" Automatically start or stop the timer when you turn on your
-                  computer or browser.  Mac, Windows, Chrome" className="apps__feature-box tooltip">
+             
+              <span className="apps__feature-box">
                 Auto start/stop
                 <span className="tooltiptext">
                   Automatically start or stop the timer when you turn on your
@@ -51,7 +54,7 @@ const DownloadPage = () => {
                   </span>
                 </span>
               </span>
-              <span data-tip="Track time even while offline.  Mac, Windows, Linux, Android, iOS" className="apps__feature-box tooltip">
+              <span className="apps__feature-box">
                 Offline mode
                 <span className="tooltiptext">
                   Track time even while offline.
@@ -61,7 +64,7 @@ const DownloadPage = () => {
                   </span>
                 </span>
               </span>
-              <span data-tip="Automatically preselect some project when starting a timer.  Mac, Windows, Chrome, iOS, Android" className="apps__feature-box tooltip">
+              <span className="apps__feature-box">
                 Default project
                 <span className="tooltiptext">
                   Automatically preselect some project when starting a timer.
@@ -71,7 +74,7 @@ const DownloadPage = () => {
                   </span>
                 </span>
               </span>
-              <span data-tip="Get notification when you forget to start a timer.  Mac, Windows, Chrome" className="apps__feature-box tooltip">
+              <span  className="apps__feature-box">
                 Reminders
                 <span className="tooltiptext">
                   Get notification when you forget to start a timer.
@@ -82,7 +85,7 @@ const DownloadPage = () => {
                 </span>
               </span>
               <br />
-              <span data-tip="Get notifications when it's time to take a break.   Mac, Chrome" className="apps__feature-box tooltip">
+              <span  className="apps__feature-box">
                 Pomodoro timer
                 <span className="tooltiptext">
                   Get notifications when it's time to take a break.
@@ -92,7 +95,7 @@ const DownloadPage = () => {
                   </span>
                 </span>
               </span>
-              <span data-tip=" Track how much time you spend in other apps on your computer.  Mac, Windows, Linux" className="apps__feature-box tooltip">
+              <span className="apps__feature-box">
                 Auto tracker
                 <span className="tooltiptext">
                   Track how much time you spend in other apps on your computer.
@@ -102,17 +105,17 @@ const DownloadPage = () => {
                   </span>
                 </span>
               </span>
-              <span data-tip="Record your expenses and attach receipts. Android, iOS" className="apps__feature-box tooltip">
+              <span className="apps__feature-box">
                 Expenses
                 <span className="tooltiptext">
-                  Record your expenses and attach receipts.
+                  Record your expenses and attach receiptsLink
                   <br />
                   <span style={{ color: "#A5A5A5", fontSize: "11px" }}>
                     Android, iOS
                   </span>
                 </span>
               </span>
-              <span data-tip="Request time off and see your balance.  Android, iOS" className="apps__feature-box tooltip">
+              <span className="apps__feature-box">
                 Time off
                 <span className="tooltiptext">
                   Request time off and see your balance.
@@ -136,12 +139,12 @@ const DownloadPage = () => {
             <div className="browser_extension_second">
               <h2>Browser Extension</h2>
               <p>Track time via extension.</p>
-              <a className="browser_a" href="/chrome-time-tracking">
+              <Link className="browser_a" to="/chrome-time-tracking">
                 <ChromeSvg />
-              </a>
-              <a className="browser_a" href="/firebox-time-tracking">
+              </Link>
+              <Link className="browser_a" to="/">
                 <FirefoxSvg />
-              </a>
+              </Link>
             </div>
           </section>
     
@@ -158,16 +161,16 @@ const DownloadPage = () => {
                 Track time on your computer.
               </p>
               <br />
-              <a className="mac_time_tracking" href="/mac-time-tracking">
+              <Link className="mac_time_tracking" to="/">
                 <MacSvg />
-              </a>
-              <a className="mac_time_tracking" href="/windows-time-tracking">
+              </Link>
+              <Link className="mac_time_tracking" to="/">
                 <WindowsSvg />
-              </a>
+              </Link>
               <br />
-              <a className="mac_time_tracking" href="/linux-time-tracking_3">
+              <Link className="mac_time_tracking" to="/">
                 <LinuxSvg />
-              </a>
+              </Link>
             </div>
           </section>
     
@@ -184,12 +187,12 @@ const DownloadPage = () => {
                 Track time and expenses on your phone.
               </p>
               <br />
-              <a className="mac_time_tracking" href="/mac-time-tracking">
+              <Link className="mac_time_tracking" to="/">
                 <IosSvg />
-              </a>
-              <a className="mac_time_tracking" href="/windows-time-tracking">
+              </Link>
+              <Link className="mac_time_tracking" to="/">
                 <AndroidSvg />
-              </a>
+              </Link>
             </div>
           </section>
     
@@ -216,9 +219,9 @@ const DownloadPage = () => {
               >
                 TABLET &nbsp;•&nbsp; PHONE &nbsp;•&nbsp; COMPUTER
               </span>
-              <a className="mac_time_tracking" href="/help/time-tracking/kiosk">
+              <Link className="mac_time_tracking" to="/">
                 Learn more
-              </a>
+              </Link>
             </div>
           </section>
     
@@ -235,19 +238,19 @@ const DownloadPage = () => {
                 Chat via Pumble app (destop and mobile).
               </p>
               <br />
-              <a className="mac_time_tracking" href="/mac-time-tracking">
+              <Link className="mac_time_tracking" to="/">
                 <IosSvg />
-              </a>
-              <a className="mac_time_tracking" href="/windows-time-tracking">
+              </Link>
+              <Link className="mac_time_tracking" to="/">
                 <AndroidSvg />
-              </a>
+              </Link>
               <br />
-              <a className="mac_time_tracking" href="/linux-time-tracking_3">
+              <Link className="mac_time_tracking" to="/">
                 <MacSvg />
-              </a>
-              <a className="mac_time_tracking" href="/linux-time-tracking_3">
+              </Link>
+              <Link className="mac_time_tracking" to="/">
                 <WindowsSvg />
-              </a>
+              </Link>
             </div>
           </section>
     
@@ -263,19 +266,19 @@ const DownloadPage = () => {
                 <p>•</p>
                 <p>Free Forever</p>
               </div>
-              <a href="https://app.clockify.me/signup">
+              <Link to="/signup">
                 <button className="download_sign_up__button">
                   Create FREE account
                 </button>
-              </a>
-              <a className="customer-link" target="_blank" href="/customers">
+              </Link>
+              <Link className="customer-link" to="/">
                 <p className="hero__text--signed-up-get-started">
                   <SignedSvg />
                   <span className="NumberOfUsers">
                     136,179 people signed up last month
                   </span>
                 </p>
-              </a>
+              </Link>
             </div>
           </section>
         </div>
