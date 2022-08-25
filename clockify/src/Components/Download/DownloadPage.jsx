@@ -8,14 +8,19 @@ import { ReactComponent as LinuxSvg } from "../../assets/images/download-app-lin
 import { ReactComponent as IosSvg } from "../../assets/images/app-store-ios.svg";
 import { ReactComponent as AndroidSvg } from "../../assets/images/play-store-android.svg";
 import { ReactComponent as SignedSvg } from "../../assets/images/signed-up-icon.svg";
+<<<<<<< HEAD
 import { Link } from "react-router-dom";
 import Footer from '../Footer/Footer';
 import "../Footer/Footer.module.css";
 
+=======
+>>>>>>> e5e0cd15b8e3f439974216662b53b1dd6aeae823
 
 const DownloadPage = () => {
 
     return (
+      <>
+      <Navbar/>
         <div className="download_main">
           <div className="download_header">
             <h1 className="donload_header_title">Time tracking apps</h1>
@@ -289,7 +294,8 @@ const DownloadPage = () => {
           </section>
           <Footer />
         </div>
+        </>
       );
     };
 
-export default DownloadPage
+export default DownloadPage;

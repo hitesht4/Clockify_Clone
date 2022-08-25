@@ -25,6 +25,7 @@
 }
 .signUp{
     color:#03a9f4 !important;
+    cursor: pointer;
 }
 .navW{
     width:75%;

@@ -4,9 +4,20 @@
 .Headers>h5{
     color:#5a6b7b;
     padding-top: 8px;
+
 }
 .Headers>p{
     color:#5a6b7b;
     padding-top: 8px;
     font-weight: lighter;
+}
+
+.Herobutton{
+    padding:13px;
+    background-color:#0288d1;
+    border:none;
+    color:white;
+    width:320px;
+    border-radius: 4px;
+    border-bottom: 4px solid #3f84bd;
 }
