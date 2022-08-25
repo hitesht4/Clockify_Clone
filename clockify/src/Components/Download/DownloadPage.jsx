@@ -1,5 +1,8 @@
 import React from "react";
 import "./styles/DownloadPage.css";
+import {Link} from 'react-router-dom';
+import Navbar from '../Home/Navbar';
+import Footer from '../Home/Footer';
 import { ReactComponent as ChromeSvg } from "../../assets/images/chrome-store.svg";
 import { ReactComponent as FirefoxSvg } from "../../assets/images/firefox-store.svg";
 import { ReactComponent as MacSvg } from "../../assets/images/download-app-mac.svg";
@@ -280,6 +283,9 @@ const DownloadPage = () => {
                 </p>
               </Link>
             </div>
+          </section>
+          <section>
+            <Footer/>
           </section>
         </div>
         </>

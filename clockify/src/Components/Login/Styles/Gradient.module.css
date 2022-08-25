@@ -5,6 +5,7 @@
     color:white;
     display:flex;
     flex-direction: column;
+    text-align: center;
 }
 .Intro>div{
     gap:30px;

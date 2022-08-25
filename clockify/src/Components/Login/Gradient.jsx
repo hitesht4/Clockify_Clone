@@ -1,5 +1,6 @@
 import React from 'react';
 import styles from './Styles/Gradient.module.css';
+import Img from '../../assets/images/Login-Image.jpg';
 
 const Gradient = () => {
   return (
@@ -15,10 +16,10 @@ const Gradient = () => {
         </button>
         </div>
         <div className={styles.Img}>
-        <img src="https://app.clockify.me/assets/features-info/scheduling-promo.webp" alt="" />
+        <img src={Img} alt="" />
         </div>
     </div>
   )
 }
 
-export default Gradient
+export default Gradient;
