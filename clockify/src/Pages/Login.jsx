@@ -15,7 +15,7 @@ const Login = () => {
       <Footer/>
       </div>
 
-      <div>
+      <div className={styles.Gradient}>
         <Gradient/>
       </div>
       

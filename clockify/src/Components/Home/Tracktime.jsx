@@ -17,10 +17,10 @@ let timeArray=[
 const Tracktime = () => {
   return (
     <div className={styles.TimeTracker}>
-        <Header/>
+        <Header label2="Why track time with Clockify"/>
     <div className={styles.TrackTime_grid}>
-        {timeArray.map(item=>(
-            <div className={styles.TimeChild}>
+        {timeArray.map((item,index)=>(
+            <div className={styles.TimeChild} key={index}>
             <img src={item.Img} alt="" />
             <h5>{item.heading}</h5>
             <p>{item.desc}</p>
