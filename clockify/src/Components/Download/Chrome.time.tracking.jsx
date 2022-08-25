@@ -3,6 +3,8 @@ import "./styles/ChromeTimeTracking.css";
 import { Link } from "react-router-dom";
 import { ReactComponent as ChromeSvg } from "../../assets/images/chrome-store.svg";
 import { ReactComponent as SignedSvg } from "../../assets/images/signed-up-icon.svg";
+import Footer from "../Footer/Footer";
+import Navbar from "../Home/Navbar"
 
 const ChromeTimeTracking = () => {
   const [image, setImage] = useState([]);
@@ -10,7 +12,9 @@ const ChromeTimeTracking = () => {
   const changeImage = () => {};
 
   return (
+    
     <div className="chrome_container">
+      <Navbar />
       <div className="chrome_header_section">
         <h1 className="chrome_header_heading">
           Free Chrome time tracking extension
@@ -282,6 +286,7 @@ const ChromeTimeTracking = () => {
       </Link><br/>
       <Link className="appstore__signup" to="/signup">Don't have an account? Sign up free</Link>
     </section>
+    <Footer />
     
     </div>
   );
