@@ -1,12 +1,30 @@
 import React from 'react';
+import Footer from '../Components/Footer/Footer';
 import Apps from '../Components/Home/Apps';
 import Experiences from '../Components/Home/Experiences';
+import FeaturesSec from '../Components/Home/FeaturesSec';
+import FreeForever from '../Components/Home/FreeForever';
+import Hero from '../Components/Home/Hero';
+import Hero2 from '../Components/Home/Hero2';
+import Hero3 from '../Components/Home/Hero3';
+import Navbar from '../Components/Home/Navbar';
+import Tracktime from '../Components/Home/Tracktime';
+import Vedio from '../Components/Home/Vedio';
 
 const Home = () => {
   return (
     <div>
-      <Apps/>
-      {/* <Experiences/> */}
+      <Navbar/>
+      <Hero/>
+      <Vedio/>
+      <FeaturesSec/>
+      <Apps/> 
+      <Tracktime/>
+      <FreeForever/>
+      <Hero3/> 
+      <Experiences/> 
+      <Hero2/> 
+      <Footer/>
     </div>
   )
 }

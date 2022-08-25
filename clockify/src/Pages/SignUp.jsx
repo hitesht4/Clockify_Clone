@@ -6,7 +6,7 @@ import Footer from '../Components/Login/Footer';
 
 const SignUp = () => {
   return (
-    <div>
+    <div style={{textAlign:"center"}}>
         <SignUpNav/>
         <Heading/>
         <SignUpForm/>

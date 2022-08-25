@@ -1,5 +1,6 @@
 import React from 'react';
 import Header from './Header';
+import HeroButton from './HeroButton';
 import styles from './Styles/Apps.module.css';
 
 
@@ -19,8 +20,8 @@ let appsArray=[
 
 const Apps = () => {
   return (
-    <div>
-        <Header/>
+    <div className={styles.AppsContainer}>
+    <Header/>
     <div className={styles.Apps}>
         {appsArray.map(item=>(
             <div className={styles.AppsChild}>
@@ -32,6 +33,7 @@ const Apps = () => {
             </div>
         ))}  
     </div>
+  
     </div>
   )
 }

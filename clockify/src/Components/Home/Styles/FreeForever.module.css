@@ -1,0 +1,17 @@
+.FreeFor{
+    height:600px;
+    display:flex;
+    justify-content: center;
+    background-color: #f7fcff ;
+    margin:30px auto;
+}
+.FreeFor>div{
+   width:60%;
+   height: 100%;
+   
+}
+
+.FreeFor img{
+    width:100%;
+    height:100%;
+}
