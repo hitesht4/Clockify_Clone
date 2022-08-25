@@ -7,7 +7,7 @@ const Hero2 = () => {
   return (
   <div className={styles.Container201} style={{paddingBottom:"60px"}}>
     <div className={styles.Hero}>
-        <h1>The most popular free <span className={styles.Span2}>time tracker</span> for teams</h1>
+        <h1>Start tracking time with Clockify</h1>
         <div >
           <ul className={styles.Stars2}>
             <li>

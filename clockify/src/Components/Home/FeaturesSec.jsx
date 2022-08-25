@@ -4,12 +4,11 @@ import HeroButton from './HeroButton';
 import styles from './Styles/FeatureSec.module.css';
 
 
-
-
 const FeaturesSec = () => {
   return (
     <div className={styles.FeatureContainer}>
-        <div><Header/>
+        <div>
+            <Header label2="Time management features" label3="Track productivity, attendance, and billable hours with a simple time tracker and timesheet."/>
         <div className={styles.List}>
             
             <div className={styles.Listflex}>
@@ -82,3 +81,8 @@ const FeaturesSec = () => {
 }
 
 export default FeaturesSec;
+
+
+
+
+

@@ -2,9 +2,10 @@ import { BrowserRouter } from "react-router-dom"
 import { HashlinkPages } from "../Routes/Hashlinkpages"
 import {HashLink} from "react-router-hash-link"
 import styles from "../FeaturesStyle/Navbar.module.css"
+import { ChakraProvider } from "@chakra-ui/react"
 export const Navbar=()=>{
     return (
-       
+       <ChakraProvider>
         <div>
             <h2 style={{fontSize:"40px",padding:"25px"}}>Features</h2>
             <div className={styles.main}>
@@ -48,7 +49,11 @@ export const Navbar=()=>{
             <div>
                 <HashlinkPages/>
             </div>
+            <div className={styles.youtubebox}>
+                <h1 style={{color:"steelblue",fontSize:"40px",padding:"15x",marginBottom:"10px"}}>Watch Demo 12:35</h1>
+            <iframe  src="https://www.youtube.com/embed/NMZhFs_b0Aw" title="Clockify Tour" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
         </div>
-      
+        </ChakraProvider>
     )
 }

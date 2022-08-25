@@ -38,9 +38,30 @@
     text-align:center;
     padding:50px 0px;
 }
-@media only screen and (min-width:480px)  and (max-width:950px){
+@media only screen and (min-width:480px)  and (max-width:980px){
+  .TrackTime_grid{
+    width:90%;
+    grid-gap:20px;
+}
+.TimeChild{
+    padding:20px;
+}
+.TimeChild>img{
+    width:40px;
+    height:40px;
+}
+.TimeChild>h5{
+   padding:7px 0px;
+   font-size: 16px;
+}
+.TimeChild>p{
+   font-size: 13px;
+}
+}
+@media only screen and (min-width:0px)  and (max-width:479px){
   .TrackTime_grid{
     width:85%;
-    grid-gap:40px;
+    grid-template-columns: repeat(1,1fr);
 }
+
 }

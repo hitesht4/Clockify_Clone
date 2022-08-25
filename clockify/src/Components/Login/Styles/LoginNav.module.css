@@ -31,3 +31,41 @@
     width:75%;
     margin: auto;
 }
+
+@media only screen and (min-width:480px)  and (max-width:980px){
+.Nav{
+    height:75px;
+    padding:10px;
+    margin:auto 20px;
+    padding:5px;
+}
+.Logo{
+    width:23%;
+    height:100%;
+}
+.Navflex{
+    width:77%;
+}
+}
+@media only screen and (min-width:0px)  and (max-width:479px){
+.Nav{
+    height:75px;
+    padding:10px;
+    margin:auto 20px;
+    padding:5px;
+}
+.Logo{
+    width:30%;
+    height:100%;
+}
+.Navflex{
+    width:70%;
+}
+.Navflex h6:nth-child(1){
+ 
+    font-size: 12px;
+}
+.Navflex h6:nth-child(2){
+    font-size: 12px;
+}
+}
