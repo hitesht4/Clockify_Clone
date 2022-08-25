@@ -1,5 +1,5 @@
 import React from "react";
-import Styles from '../Login/Footer.module.css';
+import Styles from '../Footer/Footer.module.css';
 import {TiSocialTwitter} from 'react-icons/ti';
 import {BsFacebook , BsInstagram} from 'react-icons/bs' ;
 import {AiFillYoutube , AiFillLinkedin} from 'react-icons/ai'
@@ -51,10 +51,10 @@ const Footer=()=>{
                     </div>
                 </div>
             </div>
-            <div style={{display:"flex" , gap:"1rem" , width:"80%" }}>
+            <div className={Styles.footerbottom}>
             <div>
-                <ul style={{listStyleType:"none",display:"flex", gap:"1rem", marginLeft:"100px" }}>
-                    <li>&#169; 2022 Clockify</li>
+                <ul className={Styles.list}>
+                    <li>&#169;2022 Clockify</li>
                     <li>Sitemap</li>
                     <li>Cookies</li>
                     <li>Terms</li>
@@ -62,7 +62,7 @@ const Footer=()=>{
                     <li>Security</li>
                 </ul>
             </div>
-                <div style={{display:"flex" , gap:"1rem" ,padding:"5px 100px" , marginLeft:"400px"}}>
+                <div className={Styles.social}>
                     <TiSocialTwitter/>
                     <BsFacebook/>
                     <BsInstagram/>

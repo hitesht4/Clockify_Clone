@@ -4,7 +4,7 @@
     display:grid;
     grid-template-columns: repeat(2,1fr);
     gap:20px 20px;
-    background-color: #f2f6f8;
+    background-color:#f9fdff;
 }
 .AppsChild{
     padding:20px;
@@ -23,4 +23,16 @@
 .AppsChild>button:hover{
     background-color: #3393dd;
     color:white;
+}
+.AppsContainer{
+    text-align: center;
+    padding:50px;
+    background-color:#f9fdff;
+}
+
+@media only screen and (min-width:480px)  and (max-width:950px){
+  .Apps{
+    width:100%;
+    grid-template-columns:1fr;
+}
 }

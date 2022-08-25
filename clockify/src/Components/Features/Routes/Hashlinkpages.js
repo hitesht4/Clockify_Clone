@@ -65,10 +65,7 @@ export const HashlinkPages=()=>{
             </section>
             <section id="timeoff">
                 <TimeOff/>
-            </section>
-           
-            
-            
+            </section>   
         </div>
     )
 }
