@@ -1,0 +1,160 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.navbar{
+    display: flex;
+    gap: 1rem;
+    background-color: rgb(218, 247, 247);
+    height: 300px;
+}
+.logo{
+    margin-left: 60px;
+    padding: 20px;
+}
+.link{
+    display: flex;
+    gap: 1rem;
+    padding: 25px;
+    font-size: 20px;
+}
+.link>img{
+    width: 15px;
+    margin-top: -215px;
+    margin-left: -15px;
+}
+.input{
+    height: 35px;
+    width: 200px;
+    border-radius: 10px;
+    background-color: white;
+    color: gray;
+    border: none;
+    padding: 5px 20px;
+    margin-top: 15px;
+    opacity: 0.7;
+}
+button{
+    background-color: rgb(10, 196, 243);
+    height: 40px;
+    width: 150px;
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+    margin-top: 17px;
+}
+
+.icon{
+    display: none;
+}
+
+.contact{
+    display: flex;
+    gap: 2rem;
+    width: 70%;
+    margin: auto;
+    margin-top: -200px;
+}
+
+.contact>div{
+    height: 150px;
+    width: 350px;
+    background-color: white;
+    border-radius: 10px;
+    justify-content: center;
+    color: rgb(10, 196, 243);
+}
+
+.contacticons{
+    font-size: 35px;
+    margin-top: 35px;
+    color: rgb(10, 196, 243);
+}
+
+.send{
+    width: 70%;
+    box-shadow: rgba(11, 193, 206, 0.2) 0px 2px 8px 0px;
+    margin: auto;
+   text-align: left;
+   padding: 30px;
+   box-sizing: border-box;
+   margin-top: 100px;
+}
+
+.send>h1{
+    padding: 20px;
+}
+
+.send>p{
+    margin-bottom: 15px;
+    margin-top: 10px;
+}
+
+.send >input{
+    width: 500px;
+    height: 35px;
+    border-radius: 5px;
+    border: 1px solid gray;
+}
+.send>input:nth-child(7){
+    width: 700px;
+}
+
+.send>textarea{
+    width: 700px;
+    height: 150px;
+    border-radius: 5px;
+}
+
+.send>input:nth-child(11){
+    border: none;
+}
+
+.footer{
+    margin-top: 100px;
+    background-color: rgb(218, 247, 247);
+    padding: 10px;
+}
+
+@media only screen and (min-width:200px) and (max-width:699px){
+    .navbar :not(:first-child):not(.icon){
+        display: none;
+    }
+    .icon{
+        float: right;
+        display: block;
+        font-size: 50px;
+        color: blue;
+        margin-top: 15px;
+        margin-left: 10px;
+    }
+
+    .contact{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .navbar{
+        height: 700px;
+        margin-bottom: -600px;
+    }
+
+    .send>input{
+        width:200px ;
+    }
+
+    .send>input:nth-child(7){
+        width: 300px;
+    }
+    
+    .send>textarea{
+        width: 300px;
+        height: 150px;
+        border-radius: 5px;
+    }
+    .send{
+        width: 90%;
+    }
+
+}
+
