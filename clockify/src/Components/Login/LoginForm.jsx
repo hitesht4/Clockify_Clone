@@ -2,10 +2,26 @@ import React from 'react'
 import Form from 'react-bootstrap/Form';
 import styles from './Styles/Form.module.css';
 import {FcGoogle} from 'react-icons/fc';
-
-
+import { UseUserAuth } from '../../context/UserAuthContext';
+import {useNavigate} from "react-router-dom"
+import {toast} from "react-toastify"
 
 const LoginForm = ({label,checkBox}) => {
+  const {googlesigin}=UseUserAuth()
+  const navigate=useNavigate()
+  const HandleGooglesigin=async()=>{
+
+    try{
+     await googlesigin()
+     navigate("/")
+    }
+    catch(err){
+      toast.error(err.message)
+
+    }
+
+
+   }
   return (
     <div className={styles.form}>
     <h5>{label}</h5>
@@ -36,7 +52,7 @@ const LoginForm = ({label,checkBox}) => {
 
      <button  className={styles.btn2}>
       <div>
-      <FcGoogle style={{fontSize:"25px"}}/>
+      <FcGoogle onClick={HandleGooglesigin} style={{fontSize:"25px"}}/>
       </div>
       <div>
         Continue with Google
