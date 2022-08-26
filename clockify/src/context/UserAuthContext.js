@@ -42,7 +42,6 @@ export const UserAuthContextProvider=({children})=>{
     return (
         <userAuthContext.Provider value={{User,Logout,signUp,Login,googlesigin}}>
             {children}
-
         </userAuthContext.Provider>
     )
     

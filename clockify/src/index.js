@@ -21,6 +21,10 @@ root.render(
     <PrabhatProvider store={store}>
 
 
+
+
+    <ReduxProvider store={Store}>
+
     <App />
  
     </PrabhatProvider>

@@ -43,6 +43,7 @@ const Navbar = () => {
           <h6 onClick={()=>navigate("/downloads")}>DOWNLOAD</h6>
         </div> 
 
+
      {
       !user&&!User?"":user!==null?(<div><h5 style={{display:"flex",gap:"20px"}}>
       {user&&user.email.split(" ")}
@@ -67,6 +68,7 @@ const Navbar = () => {
 
 
       
+
     
      
  
