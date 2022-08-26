@@ -14,7 +14,7 @@ import { auth } from "../Firebase";
 const userAuthContext=createContext();
 
 export const UserAuthContextProvider=({children})=>{
-   const [user,setUser]=useState("")
+   const [User,setUser]=useState("")
     const signUp=(email,password)=>{
         return createUserWithEmailAndPassword(auth,email,password)
 
@@ -40,7 +40,7 @@ export const UserAuthContextProvider=({children})=>{
     }, []);
     
     return (
-        <userAuthContext.Provider value={{user,Logout,signUp,Login,googlesigin}}>
+        <userAuthContext.Provider value={{User,Logout,signUp,Login,googlesigin}}>
             {children}
 
         </userAuthContext.Provider>
