@@ -47,12 +47,17 @@ const Navbar = () => {
       {User&&User.email?<div><h5 style={{display:"flex",gap:"20px"}}>
     {User.email.split(" ")}
       <Button onClick={handleClick} variant="primary">Logout</Button>
+
       </h5></div>:<div><h6 onClick={()=>navigate("/login")}>Log In</h6>
           <button onClick={()=>navigate("/signup")}className={styles.bttn2}>SIGN Up</button></div>}
       {user?<div><h5 style={{display:"flex",gap:"20px"}}>
     {user.email.split(" ")}
       <Button onClick={handleClick2} variant="primary">Logout</Button>
       </h5></div>:<div><h6 onClick={()=>navigate("/login")}>Log In</h6>
+
+      </h1></div>
+      :<div><h6 onClick={()=>navigate("/login")}>Log In</h6>
+
           <button onClick={()=>navigate("/signup")}className={styles.bttn2}>SIGN Up</button></div>}
     
      
