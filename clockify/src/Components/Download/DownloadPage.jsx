@@ -8,13 +8,11 @@ import { ReactComponent as LinuxSvg } from "../../assets/images/download-app-lin
 import { ReactComponent as IosSvg } from "../../assets/images/app-store-ios.svg";
 import { ReactComponent as AndroidSvg } from "../../assets/images/play-store-android.svg";
 import { ReactComponent as SignedSvg } from "../../assets/images/signed-up-icon.svg";
-<<<<<<< HEAD
+
 import { Link } from "react-router-dom";
 import Footer from '../Footer/Footer';
 import "../Footer/Footer.module.css";
-
-=======
->>>>>>> e5e0cd15b8e3f439974216662b53b1dd6aeae823
+import Navbar from "../Home/Navbar";
 
 const DownloadPage = () => {
 
@@ -30,13 +28,13 @@ const DownloadPage = () => {
             </p>
             <p className="appLink__header__download">
               <Link style={{textDecoration:"none"}} to="/chrome-time-tracking">Chrome</Link> &nbsp;•&nbsp;{" "}
-              <Link style={{textDecoration:"none"}} to="/">Firefox</Link> &nbsp;•&nbsp;{" "}
-              <Link style={{textDecoration:"none"}} to="/">Edge</Link> &nbsp;•&nbsp;{" "}
-              <Link style={{textDecoration:"none"}} to="/">Mac</Link> &nbsp;•&nbsp;{" "}
-              <Link style={{textDecoration:"none"}} to="/">Windows</Link> &nbsp;•&nbsp;{" "}
-              <Link style={{textDecoration:"none"}} to="/">Linux</Link> &nbsp;•&nbsp;{" "}
-              <Link style={{textDecoration:"none"}} to="/">Android</Link> &nbsp;•&nbsp;{" "}
-              <Link style={{textDecoration:"none"}} to="/">iOS</Link>
+              <Link style={{textDecoration:"none"}} to="/downloads">Firefox</Link> &nbsp;•&nbsp;{" "}
+              <Link style={{textDecoration:"none"}} to="/downloads">Edge</Link> &nbsp;•&nbsp;{" "}
+              <Link style={{textDecoration:"none"}} to="/downloads">Mac</Link> &nbsp;•&nbsp;{" "}
+              <Link style={{textDecoration:"none"}} to="/downloads">Windows</Link> &nbsp;•&nbsp;{" "}
+              <Link style={{textDecoration:"none"}} to="/downloads">Linux</Link> &nbsp;•&nbsp;{" "}
+              <Link style={{textDecoration:"none"}} to="/downloads">Android</Link> &nbsp;•&nbsp;{" "}
+              <Link style={{textDecoration:"none"}} to="/downloads">iOS</Link>
             </p>
             <p className="apps__header__download">
               <span className="apps__feature-box">
@@ -147,9 +145,9 @@ const DownloadPage = () => {
               <h2>Browser Extension</h2>
               <p>Track time via extension.</p>
               <Link className="browser_a" to="/chrome-time-tracking">
-                <ChromeSvg />
+                <ChromeSvg  />
               </Link>
-              <Link className="browser_a" to="/">
+              <Link className="browser_a" to="/downloads">
                 <FirefoxSvg />
               </Link>
             </div>
@@ -169,14 +167,14 @@ const DownloadPage = () => {
                 Track time on your computer.
               </p>
               <br />
-              <Link className="mac_time_tracking" to="/">
+              <Link className="mac_time_tracking" to="/downloads">
                 <MacSvg />
               </Link>
-              <Link className="mac_time_tracking" to="/">
+              <Link className="mac_time_tracking" to="/downloads">
                 <WindowsSvg />
               </Link>
               <br />
-              <Link className="mac_time_tracking" to="/">
+              <Link className="mac_time_tracking" to="/downloads">
                 <LinuxSvg />
               </Link>
             </div>
@@ -196,10 +194,10 @@ const DownloadPage = () => {
                 Track time and expenses on your phone.
               </p>
               <br />
-              <Link className="mac_time_tracking" to="/">
+              <Link className="mac_time_tracking" to="/downloads">
                 <IosSvg />
               </Link>
-              <Link className="mac_time_tracking" to="/">
+              <Link className="mac_time_tracking" to="/downloads">
                 <AndroidSvg />
               </Link>
             </div>
@@ -229,7 +227,7 @@ const DownloadPage = () => {
               >
                 TABLET &nbsp;•&nbsp; PHONE &nbsp;•&nbsp; COMPUTER
               </span>
-              <Link className="mac_time_tracking" to="/">
+              <Link className="mac_time_tracking" to="/downloads">
                 Learn more
               </Link>
             </div>
@@ -249,17 +247,17 @@ const DownloadPage = () => {
                 Chat via Pumble app (destop and mobile).
               </p>
               <br />
-              <Link className="mac_time_tracking" to="/">
+              <Link className="mac_time_tracking" to="/downloads">
                 <IosSvg />
               </Link>
-              <Link className="mac_time_tracking" to="/">
+              <Link className="mac_time_tracking" to="/downloads">
                 <AndroidSvg />
               </Link>
               <br />
-              <Link className="mac_time_tracking" to="/">
+              <Link className="mac_time_tracking" to="/downloads">
                 <MacSvg />
               </Link>
-              <Link className="mac_time_tracking" to="/">
+              <Link className="mac_time_tracking" to="/downloads">
                 <WindowsSvg />
               </Link>
             </div>
@@ -282,7 +280,7 @@ const DownloadPage = () => {
                   Create FREE account
                 </button>
               </Link>
-              <Link className="customer-link" to="/">
+              <Link className="customer-link" to="/downloads">
                 <p className="hero__text--signed-up-get-started">
                   <SignedSvg />
                   <span className="NumberOfUsers">
