@@ -2,7 +2,7 @@ import React from "react";
 import "./Styles/Project.filter.css";
 import { ReactComponent as Search } from "../../assets/images/search.svg";
 
-const ProjectFilter = ({ options }) => {
+const ProjectFilter = () => {
   return (
     <div className="project_container">
       <div className="filter_div">
