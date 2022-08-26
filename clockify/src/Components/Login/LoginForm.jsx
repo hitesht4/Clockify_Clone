@@ -1,14 +1,67 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import Form from 'react-bootstrap/Form';
 import styles from './Styles/Form.module.css';
 import {FcGoogle} from 'react-icons/fc';
 import { UseUserAuth } from '../../context/UserAuthContext';
 import {useNavigate} from "react-router-dom"
 import {toast} from "react-toastify"
+import { useDispatch, useSelector } from 'react-redux';
+import { Spinner } from 'react-bootstrap';
+import { login,reset } from '../../features/auth/authSlice';
 
 const LoginForm = ({label,checkBox}) => {
-  const {googlesigin}=UseUserAuth()
+  const dispatch=useDispatch()
   const navigate=useNavigate()
+  const {user,isLoading,isError,isSuccess,message}=useSelector(state=>state.auth)
+  const [formData, setFormData] = useState({
+
+    email: "",
+    password: "",
+
+  });
+  const {googlesigin}=UseUserAuth()
+
+
+
+
+ 
+  const {email, password } = formData;
+  useEffect(()=>{
+  if(isError){
+    toast.error(message)
+  }
+  if(isSuccess||user){
+    navigate("/")
+    
+  }
+
+  return ()=>{
+    dispatch(reset())
+  }
+    
+  
+  
+  },[user,isError,isSuccess,message,navigate,dispatch])
+  const onChange = (e) => {
+    let {name,value}=e.target
+    setFormData({
+        ...formData,
+        [name]:value
+    })
+  };
+const handleSubmit=(e)=>{
+    e.preventDefault()
+ 
+   
+    const userData={
+      email,
+      password
+    }
+    dispatch(login(userData))
+    
+ 
+}
+
   const HandleGooglesigin=async()=>{
 
     try{
@@ -19,19 +72,24 @@ const LoginForm = ({label,checkBox}) => {
       toast.error(err.message)
 
     }
+    
+
 
 
    }
+if(isLoading){
+  return <Spinner/>
+}
   return (
     <div className={styles.form}>
     <h5>{label}</h5>
-    <Form >
+    <Form onSubmit={handleSubmit} >
       <Form.Group className="mb-3" controlId="formBasicEmail">
-        <Form.Control type="email" placeholder="Enter email" />
+        <Form.Control onChange={onChange} name="email" value={email} type="email" placeholder="Enter email" />
       </Form.Group>
       
       <Form.Group className="mb-3" controlId="formBasicPassword">
-        <Form.Control type="password" placeholder="Password" />
+        <Form.Control onChange={onChange} name="password" value={password} type="password" placeholder="Password" />
       </Form.Group>
 
       <div className={styles.formflex}>

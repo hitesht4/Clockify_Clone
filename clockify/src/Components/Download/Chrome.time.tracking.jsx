@@ -26,7 +26,7 @@ const ChromeTimeTracking = () => {
         </p>
         <Link
           className="chrome_svg_link"
-          to="https://chrome.google.com/webstore/detail/clockify-time-tracker/pmjeegjhjdlccodhacdgbgfagbpmccpe"
+          to="/chrome-time-tracking"
         >
           <ChromeSvg />
         </Link>
@@ -77,7 +77,7 @@ const ChromeTimeTracking = () => {
               <p className="step_para">
                 <Link
                   className="step_link"
-                  to="https://chrome.google.com/webstore/detail/pmjeegjhjdlccodhacdgbgfagbpmccpe"
+                  to="/chrome-time-tracking"
                 >
                   Get Clockify Time Tracker on the Chrome Web Store
                 </Link>
@@ -205,7 +205,7 @@ const ChromeTimeTracking = () => {
                   when you open/close the browser)
                 </li>
                 <li>
-                  <Link className="step_link" to="/">
+                  <Link className="step_link" to="/chrome-time-tracking">
                     <b>Pomodoro timer</b>
                   </Link>
                   : Work in regular work/break intervals using the Pomodoro
@@ -222,7 +222,7 @@ const ChromeTimeTracking = () => {
               <span className="step">Step 10</span>
               <h3>Run reports and manage projects</h3>
               <p className="step10_para">
-                In the <Link to="/login">web version</Link>, you can edit past
+                In the <Link to="/chrome-time-tracking">web version</Link>, you can edit past
                 entries, analyze time, manage projects, invite people, review
                 timesheets, and export reports.
               </p>
@@ -254,7 +254,7 @@ const ChromeTimeTracking = () => {
             <h3>Integrations</h3>
             <p>
               Start timer within{" "}
-              <Link to="/">Trello, Asana, Jira, Todoist, etc.</Link>
+              <Link to="/chrome-time-tracking">Trello, Asana, Jira, Todoist, etc.</Link>
             </p>
           </span>
           <span className="bottom_box">
@@ -281,7 +281,7 @@ const ChromeTimeTracking = () => {
       </section>
 
       <section className="appstore">
-      <Link to="https://chrome.google.com/webstore/detail/pmjeegjhjdlccodhacdgbgfagbpmccpe">
+      <Link to="/chrome-time-tracking">
        <ChromeSvg />
       </Link><br/>
       <Link className="appstore__signup" to="/signup">Don't have an account? Sign up free</Link>

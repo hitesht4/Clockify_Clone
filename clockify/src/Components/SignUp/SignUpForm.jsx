@@ -1,21 +1,90 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import styles from './Styles/SignupForm.module.css';
 import Form from 'react-bootstrap/Form';
 import {FcGoogle} from 'react-icons/fc';
+import { useDispatch, useSelector } from 'react-redux';
+import { useNavigate } from 'react-router-dom';
+import { toast } from 'react-toastify';
+import { Spinner } from 'react-bootstrap';
+
+import { register,reset } from '../../features/auth/authSlice';
+import { UseUserAuth } from '../../context/UserAuthContext';
 
 const SignUpForm = () => {
+  const dispatch=useDispatch()
+  const navigate=useNavigate()
+  const {user,isLoading,isError,isSuccess,message}=useSelector(state=>state.auth)
+  const {googlesigin}=UseUserAuth()
+  const [formData, setFormData] = useState({
+
+    email: "",
+    password: "",
+
+  });
+  const {email, password } = formData;
+  useEffect(()=>{
+  if(isError){
+    toast.error(message)
+  }
+  if(isSuccess||user){
+    navigate("/login")
+    
+  }
+
+
+    dispatch(reset())
+  
+    
+  
+  
+  },[user,isError,isSuccess,message,navigate,dispatch])
+  const onChange = (e) => {
+    let {name,value}=e.target
+    setFormData({
+        ...formData,
+        [name]:value
+    })
+  };
+const handleSubmit=(e)=>{
+    e.preventDefault()
+ 
+   
+      const userData={
+        email,password
+      }
+      dispatch(register(userData))
+ 
+}
+const HandleGooglesigin=async()=>{
+
+  try{
+   await googlesigin()
+   navigate("/")
+  }
+  catch(err){
+    toast.error(err.message)
+
+  }
+  
+
+
+
+ }
+if(isLoading){
+  return <Spinner/>
+}
   return (
     <div>
     <div className={styles.form}>
     <h5>Sign Up</h5>
-    <Form >
+    <Form onSubmit={handleSubmit} >
       {/* //email Input */}
       <Form.Group className="mb-3" controlId="formBasicEmail">
-        <Form.Control type="email" placeholder="Enter email" />
+        <Form.Control onChange={onChange} name="email" value={email}  type="email" placeholder="Enter email" />
       </Form.Group>
       
       <Form.Group className="mb-3" controlId="formBasicPassword">
-        <Form.Control type="password" placeholder="Password" />
+        <Form.Control onChange={onChange} name="password" value={password} type="password" placeholder="Password" />
       </Form.Group>
 
       <div className={styles.formflex}>
@@ -36,7 +105,7 @@ const SignUpForm = () => {
 
      <button  className={styles.btn2}>
       <div>
-      <FcGoogle style={{fontSize:"25px"}}/>
+      <FcGoogle onClick={HandleGooglesigin} style={{fontSize:"25px"}}/>
       </div>
       <div>
         Continue with Google

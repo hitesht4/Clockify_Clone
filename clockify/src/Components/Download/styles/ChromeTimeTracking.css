@@ -259,4 +259,8 @@ section{
     font-size: 0.8rem;
     text-decoration: none;
     color: #03A9F4;
+    text-align: center;
+}
+.appstore{
+    text-align: center;
 }
