@@ -1,5 +1,10 @@
 import { Routes,Route } from 'react-router-dom';
 import './App.css';
+<<<<<<< HEAD
+import DownloadPage from './Components/Download/DownloadPage';
+
+=======
+>>>>>>> main
 import { Navbar } from './Components/Features/Navbar/Navbar';
 
 import Download from './Pages/Download';
