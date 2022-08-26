@@ -1,13 +1,12 @@
-import React, { useState } from "react";
+import React from "react";
 import "./styles/ChromeTimeTracking.css";
 import { Link } from "react-router-dom";
 import { ReactComponent as ChromeSvg } from "../../assets/images/chrome-store.svg";
 import { ReactComponent as SignedSvg } from "../../assets/images/signed-up-icon.svg";
-import Footer from "../Footer/Footer";
+import Footer from "../Home/Footer";
 import Navbar from "../Home/Navbar"
 
 const ChromeTimeTracking = () => {
-  const [image, setImage] = useState([]);
 
   const changeImage = () => {};
 
@@ -49,7 +48,6 @@ const ChromeTimeTracking = () => {
               type="checkbox"
               id="dark-mode-switch"
               onClick={changeImage}
-              value={image}
             />
             <span className="slider round"></span>
           </label>
@@ -286,7 +284,7 @@ const ChromeTimeTracking = () => {
       </Link><br/>
       <Link className="appstore__signup" to="/signup">Don't have an account? Sign up free</Link>
     </section>
-    <Footer />
+    <Footer/>
     
     </div>
   );

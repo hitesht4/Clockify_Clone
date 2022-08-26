@@ -14,8 +14,7 @@ const ProjectNavbar = () => {
             <div className="project_create_div">
               <Link to="" className="project_create_link">
                 {" "}
-                Create new{" "}
-                <span className="project_span"> Project </span>
+                Create new <span className="project_span"> Project </span>
               </Link>
             </div>
           </div>

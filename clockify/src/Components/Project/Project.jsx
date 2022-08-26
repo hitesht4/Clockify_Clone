@@ -5,10 +5,10 @@ import "./Styles/Project.css";
 
 const Project = () => {
   return (
-   <>
-   <ProjectNavbar />
-   <ProjectFilter />
-   </>
+    <>
+      <ProjectNavbar />
+      <ProjectFilter />
+    </>
   );
 };
 
