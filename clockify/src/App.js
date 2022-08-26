@@ -6,9 +6,11 @@ import Login from './Pages/Login';
 import SignUp from './Pages/SignUp';
 import DownloadPage from '../src/Components/Download/DownloadPage';
 import TimerApp from './Pages/TimerApp';
+import { ToastContainer } from 'react-toastify';
 
 function App() {
   return (
+    <>
     <div className="App">
       <Routes>
         <Route path="/" element={<Home/>}/>
@@ -19,6 +21,9 @@ function App() {
         <Route path="/timerapp" element={<TimerApp/>} /> 
       </Routes>
     </div>
+    <ToastContainer/>
+    </>
+
   );
 }
 
