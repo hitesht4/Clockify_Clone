@@ -3,10 +3,16 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+<<<<<<< HEAD
     "@emotion/react": "^11.10.0",
     "@emotion/styled": "^11.10.0",
+=======
+>>>>>>> b111f73d728e1d31426a2ceb79430d8b65d05e2e
     "@chakra-ui/modal": "^2.1.7",
     "@chakra-ui/react": "^2.2.9",
+    "@emotion/react": "^11.10.0",
+    "@emotion/styled": "^11.10.0",
+    "@reduxjs/toolkit": "^1.8.5",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.3.0",
     "@testing-library/user-event": "^13.5.0",
@@ -22,6 +28,7 @@
     "react-router-dom": "^6.3.0",
     "react-router-hash-link": "^2.4.3",
     "react-scripts": "5.0.1",
+    "react-toastify": "^9.0.8",
     "redux": "^4.2.0",
     "redux-thunk": "^2.4.1",
     "web-vitals": "^2.1.4"
