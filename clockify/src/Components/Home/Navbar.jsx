@@ -35,7 +35,8 @@ const Navbar = () => {
       {user&&user.email?<div><h1 style={{display:"flex"}}>
       I love you Nancy 
       <Button onClick={handleClick} variant="primary">Logout</Button>
-      </h1></div>:<div><h6 onClick={()=>navigate("/login")}>Log In</h6>
+      </h1></div>
+      :<div><h6 onClick={()=>navigate("/login")}>Log In</h6>
           <button onClick={()=>navigate("/signup")}className={styles.bttn2}>SIGN Up</button></div>}
     
      

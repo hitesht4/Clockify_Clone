@@ -17,7 +17,6 @@ root.render(
     <BrowserRouter>
     <UserAuthContextProvider>
     <PrabhatProvider store={store}>
-
     <ReduxProvider store={Store}>
     <App />
     </ReduxProvider>
