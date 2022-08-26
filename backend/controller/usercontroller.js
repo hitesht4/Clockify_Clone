@@ -1,7 +1,7 @@
 const jwt=require("jsonwebtoken")
 const bcrypt=require("bcryptjs")
 const asyncHandler=require("express-async-handler")
-const User=require("../models/usermodel.js")
+const User=require("../models/userModels")
 
 
 
@@ -13,7 +13,7 @@ const User=require("../models/usermodel.js")
 
 const registerUser=asyncHandler(async(req,res)=>{
     const {email,password}=req.body
-    if(!email||!password){
+    if(!name||!email||!password){
         res.status(400)
         throw new Error("Please add all fields")
     }
@@ -34,7 +34,8 @@ const hashedPassword=await bcrypt.hash(password,salt)
 //Create user
 
 const user=await User.create({
-   email,
+
+    email,
     password:hashedPassword
 })
 // console.log(user)
@@ -42,7 +43,7 @@ const user=await User.create({
 if(user){
     res.status(201).json({
         _id:user.id,
-        
+     
         email:user.email,
         token:generateToken(user._id)
 
@@ -67,7 +68,7 @@ const loginUser=asyncHandler(async(req,res)=>{
     if(user&&(await bcrypt.compare(password,user.password))){
         res.json({
             _id:user.id,
-           
+          
             email:user.email,
             token:generateToken(user._id)
         })
@@ -80,6 +81,18 @@ const loginUser=asyncHandler(async(req,res)=>{
 
 })
 
+
+//desc getUserData new admin
+//@route GET /api/users/me
+//@access Private
+
+const getMe=asyncHandler(async(req,res)=>{
+  
+   res.status(200).json(req.user)
+})
+
+
+//Generate JWT
 const generateToken=(id)=>{
     return jwt.sign({id},process.env.JWT_SECRET,{
         expiresIn:"20d",
@@ -87,4 +100,4 @@ const generateToken=(id)=>{
     })
 }
 
-module.exports={registerUser,loginUser}
+module.exports={registerUser,loginUser,getMe}
