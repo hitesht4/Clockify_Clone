@@ -3,6 +3,11 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+<<<<<<< HEAD
+    "@emotion/react": "^11.10.0",
+    "@emotion/styled": "^11.10.0",
+=======
+>>>>>>> b111f73d728e1d31426a2ceb79430d8b65d05e2e
     "@chakra-ui/modal": "^2.1.7",
     "@chakra-ui/react": "^2.2.9",
     "@emotion/react": "^11.10.0",
