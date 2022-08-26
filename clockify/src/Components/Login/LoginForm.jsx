@@ -21,20 +21,6 @@ const LoginForm = ({label,checkBox}) => {
   });
   const {googlesigin}=UseUserAuth()
 
-  const HandleGooglesigin=async()=>{
-
-    try{
-     await googlesigin()
-     navigate("/")
-    }
-    catch(err){
-      toast.error(err.message)
-
-    }
-
-
-
-   }
 
 
 
@@ -75,6 +61,22 @@ const handleSubmit=(e)=>{
     
  
 }
+
+  const HandleGooglesigin=async()=>{
+
+    try{
+     await googlesigin()
+     navigate("/")
+    }
+    catch(err){
+      toast.error(err.message)
+
+    }
+    
+
+
+
+   }
 if(isLoading){
   return <Spinner/>
 }
