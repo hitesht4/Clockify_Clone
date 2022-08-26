@@ -8,6 +8,8 @@ import { ReactComponent as LinuxSvg } from "../../assets/images/download-app-lin
 import { ReactComponent as IosSvg } from "../../assets/images/app-store-ios.svg";
 import { ReactComponent as AndroidSvg } from "../../assets/images/play-store-android.svg";
 import { ReactComponent as SignedSvg } from "../../assets/images/signed-up-icon.svg";
+import { Link } from "react-router-dom";
+import Navbar from "../Home/Navbar";
 
 const DownloadPage = () => {
 
