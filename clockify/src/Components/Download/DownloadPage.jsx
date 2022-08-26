@@ -1,8 +1,7 @@
 import React from "react";
 import "./styles/DownloadPage.css";
-import {Link} from 'react-router-dom';
 import Navbar from '../Home/Navbar';
-import Footer from '../Home/Footer';
+import {Link} from 'react-router-dom';
 import { ReactComponent as ChromeSvg } from "../../assets/images/chrome-store.svg";
 import { ReactComponent as FirefoxSvg } from "../../assets/images/firefox-store.svg";
 import { ReactComponent as MacSvg } from "../../assets/images/download-app-mac.svg";
@@ -11,6 +10,8 @@ import { ReactComponent as LinuxSvg } from "../../assets/images/download-app-lin
 import { ReactComponent as IosSvg } from "../../assets/images/app-store-ios.svg";
 import { ReactComponent as AndroidSvg } from "../../assets/images/play-store-android.svg";
 import { ReactComponent as SignedSvg } from "../../assets/images/signed-up-icon.svg";
+import Footer from '../Footer/Footer';
+import "../Footer/Footer.module.css";
 
 const DownloadPage = () => {
 
@@ -154,6 +155,7 @@ const DownloadPage = () => {
           <section className="download_desktop_app">
             <div className="download_desktoop_app_first">
               <img
+               className="kiosk_img"
                 alt="dewsktop_img"
                 src="https://clockify.me/assets/images/clockify-apps-desktop.png"
               />
@@ -180,6 +182,7 @@ const DownloadPage = () => {
           <section className="download_desktop_app">
             <div className="download_desktoop_app_first">
               <img
+               className="kiosk_img"
                 alt="dewsktop_img"
                 src="https://clockify.me/assets/images/clockify-apps-mobile.png"
               />
@@ -202,6 +205,7 @@ const DownloadPage = () => {
           <section className="download_desktop_app">
             <div className="download_desktoop_app_first">
               <img
+              className="kiosk_img"
                 alt="dewsktop_img"
                 src="https://clockify.me/assets/images/clockify-apps-kiosk.png"
               />
@@ -231,6 +235,7 @@ const DownloadPage = () => {
           <section className="download_chat_app">
             <div className="download_chat_app_first">
               <img
+              className="kiosk_img"
                 alt="dewsktop_img"
                 src="https://clockify.me/assets/images/pumble-apps.png"
               />
@@ -283,9 +288,6 @@ const DownloadPage = () => {
                 </p>
               </Link>
             </div>
-          </section>
-          <section>
-            <Footer/>
           </section>
         </div>
         </>

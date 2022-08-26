@@ -193,20 +193,83 @@ body {
     color: #01579B;
   }
 
-  @media (max-width: 1445px) {
+  @media (max-width: 380px) {
     .download_browser_extension, .download_desktop_app, .download_chat_app{
       margin-top: 50px;
       display: block;
+      justify-content: center;
+      text-align: center;
+      /* padding-left: 5rem; */
     }
     .browser_extension_second, .download_desktop_app_second, .download_chat_app_second{
       margin-top: 40px;
       display: block;
-      padding-right: 40px;
-      align-items: center;
+      justify-content: center;
+      /* padding-left: 5rem; */
+    }
+    .kiosk_img, .browser_extension_img{
+      width: 320px;
+      margin-left: 1.5rem;
+      /* padding-right: 8rem; */
+    }
+  }
+
+  @media (min-width: 380px) and (max-width: 500px) {
+    .download_header, .download_main, .download_browser_extension, .download_desktop_app, .download_chat_app{
+      display: block;
+      margin-top: 40px;
       justify-content: center;
     }
-   
+    .browser_extension_second, .download_desktop_app_second, .download_chat_app_second{
+      margin-top: 40px;
+      display: block;
+      justify-content: center;
+    }
+    .kiosk_img, .browser_extension_img{
+      width: 340px;
+      margin-left: 2rem;
+    }
   }
-  
+  @media (min-width: 500px) and (max-width: 1200px) {
+    .download_header>p, .download_sign_up__header, .download_browser_extension, .download_desktop_app, .download_chat_app{
+      margin-top: 50px;
+      /* padding-left: 9rem; */
+      display: block;
+      justify-content: center;
+      text-align:center;
+    }
+     .download_sign_up__bulleted_row, .browser_extension_second, .download_desktop_app_second, .download_chat_app_second{
+      margin-top: 40px;
+      display: block;
+      text-align:center;
+    }
+    .kiosk_img, .browser_extension_img{
+      width: 320px;
+    }
+    .download_sign_up__button{
+     
+    }
+  }
+
+  @media (min-width: 1200px) and (max-width: 1350px) {
+    .download_header>p, .download_sign_up__header, .download_browser_extension, .download_desktop_app, .download_chat_app{
+      margin-top: 50px;
+      /* padding-left: 9rem; */
+      display: block;
+      justify-content: center;
+      text-align:center;
+    }
+     .download_sign_up__bulleted_row, .browser_extension_second, .download_desktop_app_second, .download_chat_app_second{
+      margin-top: 40px;
+      display: block;
+      text-align:center;
+    }
+    .kiosk_img, .browser_extension_img{
+      width: 320px;
+    }
+  }
+
+
+
 
   
