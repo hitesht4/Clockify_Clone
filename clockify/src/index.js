@@ -10,17 +10,25 @@ import {Store} from '../src/Redux/Store';
 import {store} from "../src/app/store"
 import { UserAuthContextProvider } from './context/UserAuthContext';
 
+import "react-toastify/dist/ReactToastify.css"
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <BrowserRouter>
     <UserAuthContextProvider>
+      <ReduxProvider store={Store}>
     <PrabhatProvider store={store}>
+
+
+
+
     <ReduxProvider store={Store}>
+
     <App />
-    </ReduxProvider>
+ 
     </PrabhatProvider>
+    </ReduxProvider>
     </UserAuthContextProvider>
     </BrowserRouter>
   </React.StrictMode>

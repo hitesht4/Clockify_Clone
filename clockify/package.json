@@ -2,6 +2,7 @@
   "name": "clockify",
   "version": "0.1.0",
   "private": true,
+  "proxy":"http://localhost:8080",
   "dependencies": {
     "@emotion/styled": "^11.10.0",
     "@chakra-ui/modal": "^2.1.7",
