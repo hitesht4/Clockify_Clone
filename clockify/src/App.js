@@ -1,13 +1,13 @@
-import { Routes, Route } from "react-router-dom";
-import "./App.css";
-import ChromeTimeTracking from "./Components/Download/Chrome.time.tracking";
-import { Navbar } from "./Components/Features/Navbar/Navbar";
-import Home from "./Pages/Home";
-import Login from "./Pages/Login";
-import SignUp from "./Pages/SignUp";
-import DownloadPage from "../src/Components/Download/DownloadPage";
-import TimerApp from "./Pages/TimerApp";
-import { ToastContainer } from "react-toastify";
+import { Routes,Route } from 'react-router-dom';
+import './App.css';
+import ChromeTimeTracking from './Components/Download/Chrome.time.tracking';
+import Navbar from './Components/Home/Navbar';
+import Home from './Pages/Home';
+import Login from './Pages/Login';
+import SignUp from './Pages/SignUp';
+import DownloadPage from '../src/Components/Download/DownloadPage';
+import TimerApp from './Pages/TimerApp';
+import { ToastContainer } from 'react-toastify';
 
 function App() {
   return (

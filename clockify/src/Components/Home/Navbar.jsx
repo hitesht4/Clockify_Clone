@@ -4,17 +4,29 @@ import logo from'./Assets/clockify-logo.jpg';
 import {useNavigate} from 'react-router-dom';
 import { UseUserAuth } from '../../context/UserAuthContext';
 import { Button } from 'react-bootstrap';
+import { useDispatch, useSelector } from 'react-redux';
+import { logout,reset } from '../../features/auth/authSlice';
 
 const Navbar = () => {
-  const {user,Logout}=UseUserAuth()
+  const  dispatch=useDispatch()
+
+  const {user}=useSelector(state=>state.auth)
+  const {User,Logout}=UseUserAuth()
   const handleClick=async()=>{
     try{
     await Logout()
+    
     }
     catch(err){
       console.log(err)
     }
 
+
+  }
+  const handleClick2=()=>{
+    dispatch(logout())
+    dispatch(reset())
+    navigate("/login")
   }
   const navigate=useNavigate();
   return (
@@ -31,13 +43,25 @@ const Navbar = () => {
           <h6 onClick={()=>navigate("/downloads")}>DOWNLOAD</h6>
         </div> 
 
-     
-      {user&&user.email?<div><h1 style={{display:"flex"}}>
-      I love you Nancy 
-      <Button onClick={handleClick} variant="primary">Logout</Button>
-      </h1></div>
-      :<div><h6 onClick={()=>navigate("/login")}>Log In</h6>
-          <button onClick={()=>navigate("/signup")}className={styles.bttn2}>SIGN Up</button></div>}
+
+     {
+      !user&&!User?"":user!==null?(<div><h5 style={{display:"flex",gap:"20px"}}>
+      {user&&user.email.split(" ")}
+        <Button onClick={handleClick2} variant="primary">Logout</Button>
+        </h5></div>):(
+          <div><h5 style={{display:"flex",gap:"20px"}}>
+          {User&&User.email.split(" ")}
+            <Button onClick={handleClick} variant="primary">Logout</Button>
+            </h5></div>
+        )
+}
+ {
+  !user&&!User&&<div><h6 onClick={()=>navigate("/login")}>Log In</h6>
+  <button onClick={()=>navigate("/signup")}className={styles.bttn2}>SIGN Up</button></div>
+  }
+
+
+
     
      
  
