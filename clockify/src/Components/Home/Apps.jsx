@@ -1,6 +1,5 @@
 import React from 'react';
 import Header from './Header';
-import HeroButton from './HeroButton';
 import styles from './Styles/Apps.module.css';
 
 
@@ -18,13 +17,15 @@ let appsArray=[
     heading:"Kiosk App",buttons:["Any Device"]}
 ]
 
+
 const Apps = () => {
   return (
     <div className={styles.AppsContainer}>
-    <Header/>
+    <Header label2="Time tracking apps"
+    label3="Clockify works across devices. Track time from anywhere — all data is synced online."/>
     <div className={styles.Apps}>
-        {appsArray.map(item=>(
-            <div className={styles.AppsChild}>
+        {appsArray.map((item,index)=>(
+            <div className={styles.AppsChild} key={index}>
                <img src={item.Img} alt="" />
                <h6>{item.heading}</h6>
                 {item.buttons.map((item,index)=>(
@@ -33,9 +34,8 @@ const Apps = () => {
             </div>
         ))}  
     </div>
-  
     </div>
   )
 }
 
-export default Apps
+export default Apps;

@@ -11,7 +11,7 @@
    text-align: center;
 }
 
-@media only screen and (min-width:480px)  and (max-width:950px){
+@media only screen and (min-width:480px)  and (max-width:1000px){
   .Vedio{
    width:100%;
    display: flex;

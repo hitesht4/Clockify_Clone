@@ -13,13 +13,18 @@ const HeroDiv=[
 {Img:J4,head:"99.99%",desc:"highest uptime levels"}
 ];
 
+
+
+
 const Hero3 = () => {
   return (
     <div className={styles.Container101}>
-        <Header/>
+        <Header label1="#1 SUPPORT IN SOFTWARE"
+        label2="World-class customer support"
+        label3="We're here 24 hours a day, every day of the week, including holidays."/>
     <div className={styles.Container103}>
-        {HeroDiv.map(item=>(
-            <div>
+        {HeroDiv.map((item,index)=>(
+            <div key={index}>
             <div className={styles.flex2}>
             <img src={item.Img} alt="" />
             <h4>{item.head}</h4>
