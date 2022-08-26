@@ -1,20 +1,18 @@
-import React, { useState } from 'react'
+import React from 'react';
 import TaskInput from './TaskInput';
-import axios from 'axios';
 import { useEffect } from 'react';
+import {useSelector,useDispatch} from 'react-redux';
 import TaskComponent from './TaskComponent';
 import Heading from './Heading';
+import { getTasksApi } from '../../Redux/Tasks/Task.actions';
 
 const TasksApp = () => {
- const [tasks,setTasks]=useState([]);
 
- const getData=async()=>{
-    let r=await axios.get("http://localhost:8080/tasks");
-    setTasks([...r.data]);
- }
+   const {tasks}=useSelector((state)=>state.tasks);
+   const dispatch=useDispatch();
 
  useEffect(()=>{
-       getData();
+   dispatch(getTasksApi());
  },[]);
 
  

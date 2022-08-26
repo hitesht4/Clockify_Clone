@@ -24,11 +24,12 @@ useEffect(()=>{
     if(min==59 && sec==59){
         setMin(0);
         setSec(0);
-        setHrs(hrs+1);    
+        setHrs(hrs+1);   
     }
     else if(sec==59){
         setMin(min+1);
         setSec(0);
+        
     }else{
         setSec(sec+1);
     }

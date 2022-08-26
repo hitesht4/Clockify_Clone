@@ -8,7 +8,10 @@ const TaskComponent = () => {
   return (
     <div className={styles.Task}>
        <div className={styles.Desc}>
-            <input type="text" value="Item"/>
+            {/* <input type="text" value="Item"/> */}
+            <div>
+                <h6>Item</h6>
+            </div>
             <div className={styles.Projects}>
             <GrAddCircle style={{fontSize:"20px",color:"#1cb9f7"}}/>
                 <h6>Project</h6>

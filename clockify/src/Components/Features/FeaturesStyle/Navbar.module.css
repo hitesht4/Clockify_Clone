@@ -3,7 +3,7 @@
     width: 300px;
     grid-template-columns: repeat(3,120px);
     grid-template-rows: repeat(2,40px);
-    gap:10px
+    gap:10px;
 }
 
 .optionsbox button{
