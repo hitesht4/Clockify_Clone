@@ -55,8 +55,7 @@ const Navbar = () => {
       <Button onClick={handleClick2} variant="primary">Logout</Button>
       </h5></div>:<div><h6 onClick={()=>navigate("/login")}>Log In</h6>
 
-      </h1></div>
-      :<div><h6 onClick={()=>navigate("/login")}>Log In</h6>
+
 
           <button onClick={()=>navigate("/signup")}className={styles.bttn2}>SIGN Up</button></div>}
     

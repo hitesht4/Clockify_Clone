@@ -2,8 +2,8 @@ import { Routes,Route } from 'react-router-dom';
 import './App.css';
 import ChromeTimeTracking from './Components/Download/Chrome.time.tracking';
 import Navbar from './Components/Home/Navbar';
-import Download from './Pages/Download';
-import { Navbar } from './Components/Features/Navbar/Navbar';
+
+
 import Home from './Pages/Home';
 import Login from './Pages/Login';
 import SignUp from './Pages/SignUp';

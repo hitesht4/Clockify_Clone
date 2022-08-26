@@ -1,7 +1,7 @@
 import React from "react";
 import "./styles/DownloadPage.css";
 import Navbar from '../Home/Navbar';
-import {Link} from 'react-router-dom';
+
 import { ReactComponent as ChromeSvg } from "../../assets/images/chrome-store.svg";
 import { ReactComponent as FirefoxSvg } from "../../assets/images/firefox-store.svg";
 import { ReactComponent as MacSvg } from "../../assets/images/download-app-mac.svg";
@@ -11,10 +11,10 @@ import { ReactComponent as IosSvg } from "../../assets/images/app-store-ios.svg"
 import { ReactComponent as AndroidSvg } from "../../assets/images/play-store-android.svg";
 import { ReactComponent as SignedSvg } from "../../assets/images/signed-up-icon.svg";
 import { Link } from "react-router-dom";
-import Footer from '../Footer/Footer';
+
 import "../Footer/Footer.module.css";
-import Navbar from "../Home/Navbar";
-import Footer from '../Footer/Footer';
+
+
 import "../Footer/Footer.module.css";
 
 const DownloadPage = () => {

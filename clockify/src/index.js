@@ -23,7 +23,7 @@ root.render(
 
 
 
-    <ReduxProvider store={Store}>
+   
 
     <App />
  
