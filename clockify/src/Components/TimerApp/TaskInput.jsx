@@ -7,9 +7,11 @@ import styles from './Styles/TaskInput.module.css';
 import useTimer from './useTimer';
 
 import useDateHook from './useDateHook';
-import { postTasksApi, startTask } from '../../Redux/Tasks/Task.actions';
+// import { postTasksApi, startTask } from '../../Redux/Tasks/Task.actions';
 import useTime from './useTime';
 
+
+import { createGoal, startt } from "../../features/goals/goalsSlice"
 
 
 
@@ -18,7 +20,7 @@ const TaskInput = () => {
     const {hours,minutes,seconds}=useDateHook();
     const {hours2,minutes2,seconds2}=useTime();
     const [name,setName]=useState("");
-    const {start}=useSelector((state)=>state.tasks);
+    const {start}=useSelector((state)=>state.goal);
     const dispatch=useDispatch();
     
 
@@ -26,17 +28,17 @@ const TaskInput = () => {
 const handleSubmit=()=>{ 
     if(timerOn){
         let taskObj={
-            name:name||"Task",
+            text:name||"Task",
             status:false,
             start:start,
             end:`${hours2}:${minutes2}:${seconds2}`
         }
-        dispatch(postTasksApi(taskObj));
+        dispatch(createGoal(taskObj));
         handleTimer();
     }
     else{  
         handleTimer(); 
-        dispatch(startTask(`${hours}:${minutes}:${seconds}`)); 
+        dispatch(startt(`${hours}:${minutes}:${seconds}`)); 
     }  
     }
   return (

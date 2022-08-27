@@ -1,0 +1,21 @@
+.main{
+    width: 200px;
+    height: 100vh;
+    background-color: rgb(61, 60, 60);
+    /* position: fixed; */
+    /* border: 2px solid red; */
+}
+.iconsname div{
+    height: 50px;
+    background-color: rgb(61, 60, 60);
+    color:rgb(200, 197, 197);
+   
+     padding: 5px;
+     
+      /* border:1px solid red */
+}
+.iconsname div:hover{
+    cursor: pointer;
+    color:whitesmoke;
+    background-color: rgb(87, 87, 85);
+}

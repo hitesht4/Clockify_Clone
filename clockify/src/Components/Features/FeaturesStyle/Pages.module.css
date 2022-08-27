@@ -1,9 +1,12 @@
 .div{
     background-color: rgb(255, 255, 255);
     height:fit-content;
-    width: 85%;
+    width: 90%;
     margin: auto;
     /* border:3px solid black; */
+}
+.div img{
+    width: 100%;
 }
 .Integrationsdiv{
     margin:auto;
@@ -28,4 +31,14 @@
     padding: 30px;
     width: 40%;
     margin-bottom: 20px;
+}
+
+@media (max-width:800px) and (min-width:300px){
+    .div{
+        width: 100%;
+        
+    }
+    .div img{
+        width: 97%;
+    }
 }

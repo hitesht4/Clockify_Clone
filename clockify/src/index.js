@@ -6,7 +6,7 @@ import {BrowserRouter} from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {Provider as ReduxProvider} from 'react-redux';
 import { Provider as PrabhatProvider } from 'react-redux';
-import {Store} from '../src/Redux/Store';
+
 import {store} from "../src/app/store"
 import { UserAuthContextProvider } from './context/UserAuthContext';
 
@@ -17,7 +17,7 @@ root.render(
   <React.StrictMode>
     <BrowserRouter>
     <UserAuthContextProvider>
-      <ReduxProvider store={Store}>
+      
     <PrabhatProvider store={store}>
 
 
@@ -28,7 +28,7 @@ root.render(
     <App />
  
     </PrabhatProvider>
-    </ReduxProvider>
+    
     </UserAuthContextProvider>
     </BrowserRouter>
   </React.StrictMode>
