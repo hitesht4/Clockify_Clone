@@ -6,33 +6,34 @@ import {FiDollarSign} from 'react-icons/fi';
 import {AiTwotoneEdit} from 'react-icons/ai';
 import {MdDeleteForever} from 'react-icons/md';
 import { useDispatch } from 'react-redux';
-import { deleteTasksApi, updateTaskNameApi, updateTasksApi } from '../../Redux/Tasks/Task.actions';
+// import { deleteTasksApi, updateTaskNameApi, updateTasksApi } from '../../Redux/Tasks/Task.actions';
+import { deleteGoal } from '../../features/goals/goalsSlice';
 
 const TaskComponent = ({item}) => {
     const [open,setOpen]=useState(false);
     const [task,setTask]=useState("");
     const dispatch=useDispatch();
     const handleDelete=()=>{
-      dispatch(deleteTasksApi(item.id));
+      dispatch(deleteGoal(item._id));
     }
-    const handleStatus=()=>{
-      dispatch(updateTasksApi(item.id,item));  
-    }
+    // const handleStatus=()=>{
+    //   dispatch(updateTasksApi(item.id,item));  
+    // }
     const handleClick=(e)=>{
       setTask(e.target.value);
     }
-    const handlePress=(e)=>{
-      if(e.key==="Enter"){
-        dispatch(updateTaskNameApi(item.id,task));
-        setOpen(false);
-      }
+    // const handlePress=(e)=>{
+    //   if(e.key==="Enter"){
+    //     dispatch(updateTaskNameApi(item.id,task));
+    //     setOpen(false);
+    //   }
       
-    }
+    // }
   return (
     <div className={styles.Task}>
        <div className={styles.Desc} >
             <div onClick={()=>setOpen(!open)} className={styles.Up}>
-               {open ? <input type="text" autoFocus onChange={handleClick} onKeyDown={handlePress}/>:  <h6 style={{color:item.status ? "green" : "red"}}>{item.name}</h6>}    
+               <h6 style={{color:item.status ? "green" : "red"}}>{item.text}</h6>
             </div>
             <div className={styles.Projects}>
             <GrAddCircle style={{fontSize:"20px",color:"#1cb9f7"}}/>
@@ -51,7 +52,7 @@ const TaskComponent = ({item}) => {
             <div className={styles.Edit}>
                 <h6></h6>
             </div>
-            <div className={styles.Tags3} onClick={handleStatus}>
+            <div className={styles.Tags3}>
                 <AiTwotoneEdit style={{fontSize:"22px"}}/>
             </div>
             <div className={styles.Tags2} onClick={handleDelete}>
