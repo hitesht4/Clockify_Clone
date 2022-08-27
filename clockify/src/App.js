@@ -1,7 +1,7 @@
 import { Routes,Route } from 'react-router-dom';
 import './App.css';
 import ChromeTimeTracking from './Components/Download/Chrome.time.tracking';
-import Navbar from './Components/Home/Navbar';
+
 
 
 import Home from './Pages/Home';
@@ -10,6 +10,8 @@ import SignUp from './Pages/SignUp';
 import DownloadPage from '../src/Components/Download/DownloadPage';
 import TimerApp from './Pages/TimerApp';
 import { ToastContainer } from 'react-toastify';
+import { Navbar } from './Components/Features/Navbar/Navbar';
+import Slidebar from './Components/Dashboard/dash/Slidebar';
 
 function App() {
   return (
@@ -22,7 +24,10 @@ function App() {
         <Route path="/signup" element={<SignUp/>}/> 
         <Route path="/chrome-time-tracking" element={<ChromeTimeTracking />} />
         <Route path="/downloads" element={<DownloadPage/>}/> 
-        <Route path="/timerapp" element={<TimerApp/>} /> 
+        <Route path="/timerapp" element={<TimerApp/>} />
+        <Route path='/dashboard' element={<Slidebar/>}>
+               <Route path=":topics" element={<Slidebar/>}></Route>
+          </Route> 
       </Routes>
     </div>
     <ToastContainer/>
