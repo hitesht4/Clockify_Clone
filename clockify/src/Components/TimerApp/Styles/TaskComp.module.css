@@ -1,0 +1,102 @@
+.Task{
+  width:70%;
+  margin: auto;
+  background-color: #e4eaee;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+.TaskHead{
+  width:70%;
+  margin: auto;
+  padding: 5px 20px;
+  background-color: #e4eaee;
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px light grey;
+}
+.Desc{
+  width:100%;
+  margin:auto;
+  padding: 14px 20px;
+  background-color:#fff;
+  display:flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: space-around; 
+}
+.Desc>input{
+  padding:7px;
+  border:none;
+}
+.Edit{
+    display: flex;
+    font-size: 20px;
+    align-items: center;
+    gap:20px;
+}
+.Edit>h6{
+    margin-top: 8px;
+}
+.Projects{
+    padding-left:30px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 22px;
+    color:#1cb9f7;
+    gap:10px;
+}
+.Projects>h6{
+  margin-top: 8px;
+}
+.Tags{
+    padding:5px;
+    color:grey;
+    border-left:1px light grey;
+    border-right:1px light grey;
+}
+.Tags:hover{
+    cursor: pointer;
+    color:#1cb9f7;
+    padding:5px;
+    color:grey;
+    border-left:1px light grey;
+    border-right:1px light grey;
+}
+.Tags2{
+    padding:5px;
+    color:grey;
+    border-left:1px light grey;
+    border-right:1px light grey;
+}
+.Tags2:hover{
+    color:red;
+    cursor:pointer;
+}
+.Tags3{
+    padding:5px;
+    color:grey;
+    border-left:1px light grey;
+    border-right:1px light grey;
+}
+.Tags3:hover{
+    color:green;
+    cursor:pointer;
+}
+.Time{
+    display: flex;
+    gap:20px;
+}
+.Time>input{
+   width:20%;
+}
+.Up>input{
+  padding:4px;
+}
+.Up{
+  width:20%;
+  padding: 8px;
+}
+.Up:hover{
+  cursor: pointer;
+}

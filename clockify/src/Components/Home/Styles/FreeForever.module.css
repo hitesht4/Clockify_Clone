@@ -1,0 +1,38 @@
+.FreeFor{
+    height:600px;
+    display:flex;
+    justify-content: center;
+    background-color: #f7fcff ;
+    margin:30px auto;
+}
+.FreeFor>div{
+   width:60%;
+   height: 100%;  
+}
+
+.FreeFor img{
+    width:100%;
+    height:100%;
+}
+
+@media only screen and (min-width:480px)  and (max-width:1000px){
+.FreeFor{
+    height:400px;
+    display:flex;
+    justify-content: center;
+    background-color: #f7fcff ;
+    margin:30px auto;
+}
+.FreeFor>div{
+   width:80%;
+   height: 100%;  
+}
+}
+@media only screen and (min-width:0px)  and (max-width:479px){
+.FreeFor{
+    height:300px;
+}
+ .FreeFor>div{
+   width:100%;
+}
+}

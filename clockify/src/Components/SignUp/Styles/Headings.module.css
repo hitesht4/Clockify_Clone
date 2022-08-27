@@ -1,0 +1,25 @@
+.Section{
+    width:50%;
+    margin:40px auto;
+    padding:20px;
+}
+.Section>p{
+    font-size: 14px;
+    margin: 20px;
+}
+.Section>h6{
+    margin: 20px;
+}
+
+@media only screen and (min-width:480px)  and (max-width:980px){
+.Section{
+    width:75%;
+    padding:17px;
+}
+}
+@media only screen and (min-width:0px)  and (max-width:479px){
+.Section{
+    width:85%;
+    padding:17px;
+}
+}

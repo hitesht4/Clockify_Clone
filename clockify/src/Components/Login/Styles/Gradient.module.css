@@ -1,0 +1,36 @@
+.Intro{
+    padding:40px;
+    background-color: #5f3eb6;
+    background-image: linear-gradient(to bottom right, #5f3eb6, #2e6dbd);
+    color:white;
+    display:flex;
+    flex-direction: column;
+    text-align: center;
+}
+.Intro>div{
+    gap:30px;
+}
+.text{
+    height:35%;
+    padding: 40px;  
+}
+.text>div{
+    margin-bottom: 25px;
+}
+.text>div:nth-child(2){
+    margin-bottom: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:7px;
+}
+.How{
+    padding:9px 10px;
+    border:none;
+    background-color: #333333;
+    color: white;
+    text-transform: capitalize;
+}
+.Img{
+  height:60%;
+}
