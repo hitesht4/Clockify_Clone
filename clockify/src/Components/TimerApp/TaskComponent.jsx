@@ -1,13 +1,13 @@
-import React,{ useState} from 'react';
+import React,{ useState,useEffect} from 'react';
 import styles from './Styles/TaskComp.module.css';
 import {GrAddCircle} from 'react-icons/gr';
 import {BsFillTagsFill,BsThreeDotsVertical} from 'react-icons/bs';
 import {FiDollarSign} from 'react-icons/fi';
 import {AiTwotoneEdit} from 'react-icons/ai';
 import {MdDeleteForever} from 'react-icons/md';
-import { useDispatch } from 'react-redux';
-// import { deleteTasksApi, updateTaskNameApi, updateTasksApi } from '../../Redux/Tasks/Task.actions';
-import { deleteGoal } from '../../features/goals/goalsSlice';
+import { useDispatch, useSelector } from 'react-redux';
+
+import { deleteGoal, getGoals, updateGoal } from '../../features/goals/goalsSlice';
 
 const TaskComponent = ({item}) => {
     const [open,setOpen]=useState(false);
@@ -16,24 +16,35 @@ const TaskComponent = ({item}) => {
     const handleDelete=()=>{
       dispatch(deleteGoal(item._id));
     }
-    // const handleStatus=()=>{
-    //   dispatch(updateTasksApi(item.id,item));  
-    // }
+   
+    const handleStatus=()=>{
+      let update={...item,status:!item.status}
+      dispatch(updateGoal(update)); 
+      // setTimeout(() => {
+      //   dispatch(getGoals())
+      // }, 700); 
+    }
     const handleClick=(e)=>{
       setTask(e.target.value);
     }
-    // const handlePress=(e)=>{
-    //   if(e.key==="Enter"){
-    //     dispatch(updateTaskNameApi(item.id,task));
-    //     setOpen(false);
-    //   }
+    const handlePress=(e)=>{
+      if(e.key==="Enter"){
+        let update={...item,text:task}
+        dispatch(updateGoal(update));
+        // setTimeout(() => {
+        //   dispatch(getGoals())
+        // }, 500);
+    
+        setOpen(false);
+      }
       
-    // }
+    }
+ 
   return (
     <div className={styles.Task}>
        <div className={styles.Desc} >
             <div onClick={()=>setOpen(!open)} className={styles.Up}>
-               <h6 style={{color:item.status ? "green" : "red"}}>{item.text}</h6>
+               {open ? <input type="text" autoFocus onChange={handleClick} onKeyDown={handlePress}/>:  <h6 style={{color:item.status ? "green" : "red"}}>{item.text}</h6>}    
             </div>
             <div className={styles.Projects}>
             <GrAddCircle style={{fontSize:"20px",color:"#1cb9f7"}}/>
@@ -52,7 +63,7 @@ const TaskComponent = ({item}) => {
             <div className={styles.Edit}>
                 <h6></h6>
             </div>
-            <div className={styles.Tags3}>
+            <div className={styles.Tags3} onClick={handleStatus}>
                 <AiTwotoneEdit style={{fontSize:"22px"}}/>
             </div>
             <div className={styles.Tags2} onClick={handleDelete}>
