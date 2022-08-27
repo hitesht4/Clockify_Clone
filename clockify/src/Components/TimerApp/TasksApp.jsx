@@ -7,16 +7,33 @@ import Heading from './Heading';
 
 import styles from './Styles/TaskApp.module.css';
 import EmptyTask from './EmptyTask';
-import { getGoals } from '../../features/goals/goalsSlice';
+import { getGoals} from '../../features/goals/goalsSlice';
+import {reset} from "../../features/auth/authSlice"
+import { useNavigate } from 'react-router-dom';
+
 
 const TasksApp = () => {
 
-   const {goals,isLoading,isError}=useSelector((state)=>state.goal);
-   const dispatch=useDispatch();
 
- useEffect(()=>{
-   dispatch(getGoals());
- },[]);
+   const dispatch=useDispatch();
+const navigate=useNavigate()
+   const {goals,isLoading,isError,message}=useSelector(state=>state.goal)
+   const {user}=useSelector(state=>state.auth)
+   useEffect(()=>{
+     if(isError){
+       console.log(message)
+     }
+   if(!user){
+     navigate("/login")
+   }
+   dispatch(getGoals())
+ 
+   return()=>{
+     dispatch(reset())
+   }
+    
+   
+   },[user,navigate,isError,message,dispatch])
 
  if(isLoading){
   return (
