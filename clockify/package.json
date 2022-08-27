@@ -1,8 +1,8 @@
 {
   "name": "clockify",
   "version": "0.1.0",
-  "private": true,
   "proxy": "http://localhost:8080",
+  "private": true,
   "dependencies": {
     "@chakra-ui/modal": "^2.1.7",
     "@chakra-ui/react": "^2.2.9",
