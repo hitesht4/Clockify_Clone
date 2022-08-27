@@ -11,8 +11,6 @@ import { postTasksApi, startTask } from '../../Redux/Tasks/Task.actions';
 import useTime from './useTime';
 
 
-import { postTasksApi } from '../../Redux/Tasks/Task.actions';
-
 
 
 const TaskInput = () => {
