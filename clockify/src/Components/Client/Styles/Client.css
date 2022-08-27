@@ -25,6 +25,7 @@
   border-radius: 5px;
   border: 0.5px solid gray;
   background-color: white;
+  padding-left: 3px;
 }
 
 .Clients_top {
@@ -40,6 +41,7 @@
   border-radius: 5px;
   border: 0.5px solid gray;
   background-color: white;
+  padding-left: 3px;
 }
 
 .Clients_button {
