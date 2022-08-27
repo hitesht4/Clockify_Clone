@@ -41,13 +41,13 @@ const Reports = () => {
         </TabList>
         <TabPanels>
           <TabPanel>
-          <div>summary <img src="https://clockify.me/assets/images/features/features-reports-screenshot.svg" alt="" /></div>
+          <div> <img src="https://clockify.me/assets/images/features/features-reports-screenshot.svg" alt="" /></div>
           </TabPanel>
           <TabPanel>
-          <div>detailed <img src="https://clockify.me/assets/images/features/features-detailed-screenshot.svg" alt="" /></div>
+          <div> <img src="https://clockify.me/assets/images/features/features-detailed-screenshot.svg" alt="" /></div>
           </TabPanel>
           <TabPanel>
-          <div>weekly <img src="https://clockify.me/assets/images/features/features-weekly-screenshot.svg" alt="" /></div>
+          <div><img src="https://clockify.me/assets/images/features/features-weekly-screenshot.svg" alt="" /></div>
           </TabPanel>
         </TabPanels>
       </Tabs>
@@ -77,7 +77,7 @@ const Reports = () => {
         
       
        <div>
-        footer
+        {/* footer */}
        </div>
        
       

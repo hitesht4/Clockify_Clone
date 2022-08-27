@@ -7,7 +7,7 @@ export const Navbar=()=>{
     return (
        <ChakraProvider>
         <div>
-            <h2 style={{fontSize:"40px",padding:"25px"}}>Features</h2>
+            <h2 style={{fontSize:"40px",padding:"25px",textAlign:"center"}}>Features</h2>
             <div className={styles.main}>
                 
                 <div className={styles.options}><h4>TIME KEEPING</h4>
@@ -50,7 +50,7 @@ export const Navbar=()=>{
                 <HashlinkPages/>
             </div>
             <div className={styles.youtubebox}>
-                <h1 style={{color:"steelblue",fontSize:"40px",padding:"15x",marginBottom:"10px"}}>Watch Demo 12:35</h1>
+                <h1 style={{color:"steelblue",fontSize:"40px",padding:"15x",marginBottom:"10px",textAlign:"center"}}>Watch Demo 12:35</h1>
             <iframe  src="https://www.youtube.com/embed/NMZhFs_b0Aw" title="Clockify Tour" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
         </div>
