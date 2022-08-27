@@ -17,7 +17,7 @@ const Hero2 = () => {
             <li>Free Forever</li>
           </ul>
         </div>
-        <HeroButton label={"CREATE FREE ACCOUNT"}/>
+        <HeroButton router={"/signup"} label={"CREATE FREE ACCOUNT"}/>
         <p className={styles.Info}><IoIosPeople style={{fontSize:"20px"}}/>135,897 people signed up last month</p>
     </div>
   </div>

@@ -264,3 +264,17 @@ section{
 .appstore{
     text-align: center;
 }
+.chrome_switch_div{
+    padding:20px 0px;
+   text-align: center;
+}
+.chrome_input_switch{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap:10px;
+    margin:auto;
+    width:10%;
+}
+
+

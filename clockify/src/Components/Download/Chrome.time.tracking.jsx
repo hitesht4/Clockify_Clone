@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useState} from "react";
 import "./styles/ChromeTimeTracking.css";
 import { Link } from "react-router-dom";
 import { ReactComponent as ChromeSvg } from "../../assets/images/chrome-store.svg";
@@ -8,7 +8,12 @@ import Navbar from "../Home/Navbar"
 
 const ChromeTimeTracking = () => {
 
-  const changeImage = () => {};
+  const [dark, setDark] = useState(false);
+
+  const changeImage = () => {
+    setDark(!dark);
+  };
+
 
   return (
     
@@ -34,25 +39,30 @@ const ChromeTimeTracking = () => {
           <SignedSvg />
           280,000+ users
         </span>
-        <img
-          className="chrome_header_img"
-          src="https://clockify.me/assets/images/extension-time-tracker-light.png"
-          alt="chrome_img"
-        />
-        <div
-          id="dark-mode-element"
-          style={{ marginTop: "-0.5rem", textAlign: "center" }}
-        >
-          <label className="chrome_switch" for="dark-mode-switch">
-            <input
-              type="checkbox"
-              id="dark-mode-switch"
-              onClick={changeImage}
+        <div className="chrome_switch_div">
+          <div>
+            <img
+              src={
+                !dark
+                  ? "https://clockify.me/assets/images/extension-time-tracker-light.png"
+                  : "https://clockify.me/assets/images/extension-time-tracker-dark.png"
+              }
+              alt="chrome_switch_img"
             />
-            <span className="slider round"></span>
-          </label>
+          </div>
+          <div className="chrome_input_switch">
+            <label className="chrome_switch" for="dark-mode-switch">
+              <input
+                type="checkbox"
+                id="dark-mode-switch"
+                onClick={changeImage}
+              />
+              <span className="slider round"></span>
+            </label>
+          </div>
         </div>
       </div>
+
 
       <div className="chrome_middle_section">
         <section>
