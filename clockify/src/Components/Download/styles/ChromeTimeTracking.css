@@ -52,7 +52,7 @@ body {
 .slider.round {
     border-radius: 18px;
 }
-.slider {
+.slider{
     position: absolute;
     cursor: pointer;
     top: 0;
@@ -60,8 +60,7 @@ body {
     right: 0;
     bottom: 0;
     background-color: #c6d2d9;
-    -webkit-transition: .4s;
-    transition: .4s;
+    
 }
 .slider.round:before {
     border-radius: 50%;
@@ -74,8 +73,7 @@ body {
     left: 3px;
     bottom: 3px;
     background-color: white;
-    -webkit-transition: .4s;
-    transition: .4s;
+    padding-top: 5px;
 }
 .chrome_middle_section{
     max-width: 100%;
@@ -226,4 +224,16 @@ section{
 }
 .appstore{
     text-align: center;
+}
+.chrome_switch_div{
+    padding:20px 0px;
+   text-align: center;
+}
+.chrome_input_switch{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap:10px;
+    margin:auto;
+    width:10%;
 }
