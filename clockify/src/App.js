@@ -2,8 +2,6 @@ import { Routes,Route } from 'react-router-dom';
 import './App.css';
 import ChromeTimeTracking from './Components/Download/Chrome.time.tracking';
 
-
-
 import Home from './Pages/Home';
 import Login from './Pages/Login';
 import SignUp from './Pages/SignUp';
@@ -16,6 +14,7 @@ import Slidebar from './Components/Dashboard/dash/Slidebar';
 function App() {
   return (
     <>
+
     <div className="App">
       <Routes>
         <Route path="/" element={<Home/>}/>
@@ -31,8 +30,9 @@ function App() {
       </Routes>
     </div>
     <ToastContainer/>
-    </>
 
+     
+    </>
   );
 }
 

@@ -1,12 +1,13 @@
 .Task{
   width:70%;
-  margin:30px auto;
+  margin: auto;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 }
 
 .Desc{
   width:100%;
   margin:auto;
+  margin-bottom: 30px;
   padding: 14px 20px;
   background-color:#fff;
   display:flex;

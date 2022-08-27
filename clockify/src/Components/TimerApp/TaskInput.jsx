@@ -1,27 +1,45 @@
 import React,{useState} from 'react';
-import {useDispatch} from 'react-redux';
+import {useDispatch, useSelector} from 'react-redux';
 import {GrAddCircle} from 'react-icons/gr';
 import {BsFillTagsFill} from 'react-icons/bs';
 import {FiDollarSign} from 'react-icons/fi';
 import styles from './Styles/TaskInput.module.css';
 import useTimer from './useTimer';
 
+import useDateHook from './useDateHook';
+import { postTasksApi, startTask } from '../../Redux/Tasks/Task.actions';
+import useTime from './useTime';
+
+
 import { postTasksApi } from '../../Redux/Tasks/Task.actions';
+
 
 
 const TaskInput = () => {
     const {timerOn,sec,min,hrs,handleTimer}=useTimer();
+    const {hours,minutes,seconds}=useDateHook();
+    const {hours2,minutes2,seconds2}=useTime();
     const [name,setName]=useState("");
-    // const {hours,minutes,seconds}=useDateHook();
+    const {start}=useSelector((state)=>state.tasks);
     const dispatch=useDispatch();
     
-    const handleSubmit=()=>{
-        if(timerOn){
-          handleTimer();
-          dispatch(postTasksApi());
-        }else{
-            handleTimer();         
+
+   
+const handleSubmit=()=>{ 
+    if(timerOn){
+        let taskObj={
+            name:name||"Task",
+            status:false,
+            start:start,
+            end:`${hours2}:${minutes2}:${seconds2}`
         }
+        dispatch(postTasksApi(taskObj));
+        handleTimer();
+    }
+    else{  
+        handleTimer(); 
+        dispatch(startTask(`${hours}:${minutes}:${seconds}`)); 
+    }  
     }
   return (
         <div className={styles.Task}>
@@ -32,10 +50,10 @@ const TaskInput = () => {
                 <h6>Project</h6>
             </div>
             <div className={styles.Tags}>
-                <BsFillTagsFill style={{fontSize:"25px"}}/>
+                <BsFillTagsFill style={{fontSize:"22px"}}/>
             </div>
             <div className={styles.Tags}>
-                <FiDollarSign style={{fontSize:"25px"}}/>
+                <FiDollarSign style={{fontSize:"22px"}}/>
             </div>
             <div className={styles.Timer}>
                 <h6>{hrs<10 ? "0" + hrs : hrs}:{min<10 ? "0" + min : min}:{sec<10 ? "0" + sec : sec}</h6>
