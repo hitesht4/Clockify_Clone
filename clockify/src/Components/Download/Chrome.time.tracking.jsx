@@ -1,22 +1,27 @@
+
 import React,{useState} from "react";
+
+
 import "./styles/ChromeTimeTracking.css";
 import { Link } from "react-router-dom";
 import { ReactComponent as ChromeSvg } from "../../assets/images/chrome-store.svg";
 import { ReactComponent as SignedSvg } from "../../assets/images/signed-up-icon.svg";
 import Footer from "../Home/Footer";
-import Navbar from "../Home/Navbar"
+import Navbar from "../Home/Navbar";
 
 const ChromeTimeTracking = () => {
-
   const [dark, setDark] = useState(false);
+
+
+ 
 
   const changeImage = () => {
     setDark(!dark);
   };
 
 
+
   return (
-    
     <div className="chrome_container">
       <Navbar />
       <div className="chrome_header_section">
@@ -28,10 +33,7 @@ const ChromeTimeTracking = () => {
           tracker allows you to track how much time you spend working on
           projects with just one click.
         </p>
-        <Link
-          className="chrome_svg_link"
-          to="/chrome-time-tracking"
-        >
+        <Link className="chrome_svg_link" to="/chrome-time-tracking">
           <ChromeSvg />
         </Link>
         <br />
@@ -83,10 +85,7 @@ const ChromeTimeTracking = () => {
               <span className="step">Step 2</span>
               <h3>Install time tracking extension for Chrome</h3>
               <p className="step_para">
-                <Link
-                  className="step_link"
-                  to="/chrome-time-tracking"
-                >
+                <Link className="step_link" to="/chrome-time-tracking">
                   Get Clockify Time Tracker on the Chrome Web Store
                 </Link>
               </p>
@@ -230,9 +229,9 @@ const ChromeTimeTracking = () => {
               <span className="step">Step 10</span>
               <h3>Run reports and manage projects</h3>
               <p className="step10_para">
-                In the <Link to="/chrome-time-tracking">web version</Link>, you can edit past
-                entries, analyze time, manage projects, invite people, review
-                timesheets, and export reports.
+                In the <Link to="/chrome-time-tracking">web version</Link>, you
+                can edit past entries, analyze time, manage projects, invite
+                people, review timesheets, and export reports.
               </p>
               <img
                 src="https://clockify.me/assets/images/feature-works-everywhere-reports.png"
@@ -262,7 +261,9 @@ const ChromeTimeTracking = () => {
             <h3>Integrations</h3>
             <p>
               Start timer within{" "}
-              <Link to="/chrome-time-tracking">Trello, Asana, Jira, Todoist, etc.</Link>
+              <Link to="/chrome-time-tracking">
+                Trello, Asana, Jira, Todoist, etc.
+              </Link>
             </p>
           </span>
           <span className="bottom_box">
@@ -289,13 +290,15 @@ const ChromeTimeTracking = () => {
       </section>
 
       <section className="appstore">
-      <Link to="/chrome-time-tracking">
-       <ChromeSvg />
-      </Link><br/>
-      <Link className="appstore__signup" to="/signup">Don't have an account? Sign up free</Link>
-    </section>
-    <Footer/>
-    
+        <Link to="/chrome-time-tracking">
+          <ChromeSvg />
+        </Link>
+        <br />
+        <Link className="appstore__signup" to="/signup">
+          Don't have an account? Sign up free
+        </Link>
+      </section>
+      <Footer />
     </div>
   );
 };
