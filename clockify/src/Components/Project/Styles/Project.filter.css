@@ -19,7 +19,7 @@ body {
   align-items: center;
   padding: 0 1.4286rem;
 }
-@media (min-width: 992px) {
+@media (min-width: 1200px) {
   .filter_span_div {
     display: flex;
   }
@@ -41,15 +41,13 @@ body {
   padding: 0rem 1rem 0rem 1rem;
 }
 .input_tag {
-  width: 50%;
-  height: 1rem;
-  padding: 0.608rem 0.75rem;
-  font-size: 1rem;
+  width: 40%;
+  font-size: 1.2rem;
   font-weight: 400;
   line-height: 1.5;
   color: #333;
-  border: 1px solid grey;
-  border-radius: 2px;
+  border: none;
+  border-radius: 5px;
 }
 .applyfilter_button {
   color: #17b8f7;
