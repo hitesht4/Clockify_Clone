@@ -16,7 +16,7 @@ const getGoals = asyncHandler(async (req, res) => {
 //@access Private
 
 const setGoals = asyncHandler(async (req, res) => {
-  if (!req.body.text||!req.body.start||req.body.end) {
+  if (!req.body.text||!req.body.start||!req.body.end) {
     res.status(400);
     throw new Error("Please add a text field");
   }
@@ -24,6 +24,7 @@ const setGoals = asyncHandler(async (req, res) => {
     text: req.body.text,
     start:req.body.start,
     end:req.body.end,
+    status:req.body.status,
     user:req.user.id
   });
   res.status(200).json(goal);

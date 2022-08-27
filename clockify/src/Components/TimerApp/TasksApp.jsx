@@ -4,20 +4,21 @@ import { useEffect } from 'react';
 import {useSelector,useDispatch} from 'react-redux';
 import TaskComponent from './TaskComponent';
 import Heading from './Heading';
-import { getTasksApi } from '../../Redux/Tasks/Task.actions';
+
 import styles from './Styles/TaskApp.module.css';
 import EmptyTask from './EmptyTask';
+import { getGoals } from '../../features/goals/goalsSlice';
 
 const TasksApp = () => {
 
-   const {tasks,loading,error}=useSelector((state)=>state.tasks);
+   const {goals,isLoading,isError}=useSelector((state)=>state.goal);
    const dispatch=useDispatch();
 
  useEffect(()=>{
-   dispatch(getTasksApi());
+   dispatch(getGoals());
  },[]);
 
- if(loading){
+ if(isLoading){
   return (
   <div className={styles.Body1}>
     <TaskInput/>
@@ -25,7 +26,7 @@ const TasksApp = () => {
   </div>
   )
  }
-  else if(error){
+  else if(isError){
     return (
     <div className={styles.Body1}>
       <TaskInput/>
@@ -38,12 +39,12 @@ const TasksApp = () => {
   return (
     <div className={styles.Body1}>
       <TaskInput/>
-    {tasks.length<=0 ?
+    {goals.length<=0 ?
     <div><EmptyTask/></div>:
     <div >
     <Heading/>
-    {tasks.map(item=>(
-       <TaskComponent key={item.id} item={item}/>
+    {goals.map(item=>(
+       <TaskComponent key={item._id} item={item}/>
     ))}
     </div>}
    </div>

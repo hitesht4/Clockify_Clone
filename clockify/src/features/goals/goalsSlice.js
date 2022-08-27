@@ -4,6 +4,7 @@ import goalService from "./goalsService";
 
 const initialState={
     goals:[],
+     start:"",
     isError:false,
     isSuccess:false,
     isLoading:false,
@@ -53,7 +54,12 @@ export const goalSlice=createSlice({
     name:"goal",
     initialState,
     reducers:{
-        reset:(state)=>initialState
+        reset:(state)=>initialState,
+        startt:(state,action)=>{
+            state.start=action.payload
+        }
+        
+
     },
     extraReducers:(builder)=>{
         builder
@@ -108,5 +114,6 @@ export const goalSlice=createSlice({
 
 })
 
-export const {reset}=goalSlice.actions
+export const {reset,startt}=goalSlice.actions
+
 export default goalSlice.reducer
