@@ -1,4 +1,7 @@
-import React, { useState } from "react";
+
+import React,{useState} from "react";
+
+
 import "./styles/ChromeTimeTracking.css";
 import { Link } from "react-router-dom";
 import { ReactComponent as ChromeSvg } from "../../assets/images/chrome-store.svg";
@@ -9,9 +12,14 @@ import Navbar from "../Home/Navbar";
 const ChromeTimeTracking = () => {
   const [dark, setDark] = useState(false);
 
+
+ 
+
   const changeImage = () => {
     setDark(!dark);
   };
+
+
 
   return (
     <div className="chrome_container">
@@ -56,6 +64,7 @@ const ChromeTimeTracking = () => {
           </div>
         </div>
       </div>
+
 
       <div className="chrome_middle_section">
         <section>

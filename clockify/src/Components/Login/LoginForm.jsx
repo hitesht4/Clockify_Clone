@@ -58,6 +58,7 @@ const handleSubmit=(e)=>{
       password
     }
     dispatch(login(userData))
+  
     
  
 }
@@ -66,7 +67,7 @@ const handleSubmit=(e)=>{
 
     try{
      await googlesigin()
-     navigate("/")
+     navigate("/dashboard")
     }
     catch(err){
       toast.error(err.message)

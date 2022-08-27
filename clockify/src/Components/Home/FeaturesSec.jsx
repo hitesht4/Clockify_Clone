@@ -72,7 +72,7 @@ const FeaturesSec = () => {
         </div>
 
         <div>
-            <HeroButton label="SEE ALL FEATURES"/>
+            <HeroButton router={"/features"} label="SEE ALL FEATURES"/>
         </div>
         </div>
     </div>
