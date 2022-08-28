@@ -15,7 +15,7 @@ const Tags=()=>{
             </div>
             <div className={Styles.right}>
                 <input type="text" placeholder="Add a new tag" className={Styles.tag}/>
-                <button>Add</button>
+                <button className="hello">Add</button>
             </div>
         </div>
         <div className={Styles.list}>

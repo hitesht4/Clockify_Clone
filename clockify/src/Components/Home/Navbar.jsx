@@ -15,9 +15,8 @@ const Navbar = () => {
   const handleClick=async()=>{
     try{
     await Logout()
-    dispatch(logout())
-    dispatch(reset())
-    navigate("/login")
+ 
+    navigate("/")
     
     }
     catch(err){
@@ -29,7 +28,7 @@ const Navbar = () => {
   const handleClick2=()=>{
     dispatch(logout())
     dispatch(reset())
-    navigate("/login")
+    navigate("/")
   }
   const navigate=useNavigate();
   return (

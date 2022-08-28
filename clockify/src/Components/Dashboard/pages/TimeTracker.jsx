@@ -1,8 +1,9 @@
 import React from 'react'
+import TimerApp from '../../../Pages/TimerApp'
 
 const TimeTracker = () => {
   return (
-    <div>TimeTracker</div>
+    <div><TimerApp/></div>
   )
 }
 

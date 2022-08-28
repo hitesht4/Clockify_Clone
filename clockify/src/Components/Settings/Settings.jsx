@@ -8,7 +8,7 @@ const Settings=()=>{
             <p>Company logo will appear in shared reports and branded PDF exports. Formats: png, jpg, gif. Max size: 1 MB.</p>
         </div>
         <div className={Styles.logo}>
-        <img src="https://image.shutterstock.com/image-vector/abstract-boy-avtar-character-fiction-260nw-2168819879.jpg" alt="settings-logo" />
+        <img className="got" src="https://image.shutterstock.com/image-vector/abstract-boy-avtar-character-fiction-260nw-2168819879.jpg" alt="settings-logo" />
         <label for="files">UPLOAD IMAGE</label>
         <input id='files' className={Styles.inpbtn} type="file"/>
         </div>

@@ -27,7 +27,7 @@ const SignUpForm = () => {
     toast.error(message)
   }
   if(isSuccess||user){
-    navigate("/login")
+    navigate("/dashboard")
     
   }
 
@@ -59,7 +59,7 @@ const HandleGooglesigin=async()=>{
 
   try{
    await googlesigin()
-   navigate("/")
+   navigate("/dashboard")
   }
   catch(err){
     toast.error(err.message)

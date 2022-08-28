@@ -1,9 +1,12 @@
 import React from 'react'
+import Settings from '../../Settings/Settings'
 
-const Settings = () => {
+const Settingsdiv = () => {
   return (
-    <div>Settings</div>
+    <div>
+      <Settings/>
+    </div>
   )
 }
 
-export default Settings
+export default Settingsdiv

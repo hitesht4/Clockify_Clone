@@ -1,9 +1,11 @@
 import React from 'react'
-
-const Projects = () => {
+import Project from "../../Project/Project"
+const Projectsdiv = () => {
   return (
-    <div>Projects</div>
+    <div>
+      <Project/>
+    </div>
   )
 }
 
-export default Projects
+export default Projectsdiv

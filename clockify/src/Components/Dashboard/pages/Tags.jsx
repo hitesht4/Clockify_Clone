@@ -1,9 +1,12 @@
 import React from 'react'
+import Tags from '../../Tags/Tags'
 
-const Tags = () => {
+const Tagsdiv = () => {
   return (
-    <div>Tags</div>
+    <div>
+      <Tags/>
+    </div>
   )
 }
 
-export default Tags
+export default Tagsdiv

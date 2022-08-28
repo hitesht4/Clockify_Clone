@@ -1,9 +1,11 @@
 import React from 'react'
-
-const Client = () => {
+import Client from "../../Client/Client"
+const Clientdiv = () => {
   return (
-    <div>Client</div>
+    <div>
+      <Client/>
+    </div>
   )
 }
 
-export default Client
+export default Clientdiv

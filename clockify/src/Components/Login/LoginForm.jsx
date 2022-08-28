@@ -31,7 +31,7 @@ const LoginForm = ({label,checkBox}) => {
     toast.error(message)
   }
   if(isSuccess||user){
-    navigate("/")
+    navigate("/dashboard")
     
   }
 

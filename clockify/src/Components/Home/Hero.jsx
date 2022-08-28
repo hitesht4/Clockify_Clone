@@ -18,7 +18,7 @@ const Hero = () => {
         </div>
 
         <div className={styles.Click}>
-        <HeroButton router={"/timerapp"} label={"START TRACKING TIME-IT'S FREE "}/>
+        <HeroButton router={"/dashboard"} label={"START TRACKING TIME-IT'S FREE "}/>
          <p className={styles.Info}><IoIosPeople style={{fontSize:"20px"}}/>135,897 people signed up last month</p>
          </div>
 
