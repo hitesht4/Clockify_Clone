@@ -1,29 +1,54 @@
-import React, { useState } from 'react'
+import React, { useState,useEffect } from 'react'
 // import Slideclose from './Slideclose';
 // import Slideopen from './Slideopen';
 import styles from "./STYLE/Slidebar.module.css"
 import {VscMenu} from "react-icons/vsc"
-import { Route, Routes } from 'react-router-dom';
+import { Route, Routes, useNavigate } from 'react-router-dom';
 import TimeTracker from '../pages/TimeTracker';
 import Calender from '../pages/Calender';
 import Dashboard from '../pages/Dashboard';
 import Reports from '../pages/Reports';
 import Team from '../pages/Team';
-import Client from '../pages/Client';
+
 import Slideclose from './Slideclose';
 import Slideopen from "./Slideopen"
-import Projects from '../../Features/Pages/Reporting/Projects';
-import Tags from '../pages/Tags';
-import Settings from '../pages/Settings';
+// import Projects from '../../Features/Pages/Reporting/Projects';
+
 import {BsQuestionCircle} from "react-icons/bs"
 import {IoNotificationsSharp} from "react-icons/io5"
 import {FaUserCheck} from "react-icons/fa"
+import Clientdiv from '../pages/Client';
+import Tagsdiv from '../pages/Tags';
+import Settingsdiv from '../pages/Settings';
+import Projectsdiv from '../pages/Projects';
+import { useDispatch, useSelector } from 'react-redux';
+import { getGoals } from '../../../features/goals/goalsSlice';
+import{reset} from "../../../features/auth/authSlice"
 const Slidebar = () => {
  const [state,setstate]=useState(false);
  const handleclick=()=>{
     setstate(!state)
  }
 
+ const navigate=useNavigate()
+ const dispatch=useDispatch()
+ const {user}=useSelector(state=>state.auth)
+ const {goals,isLoading,isError,message}=useSelector(state=>state.goal)
+ useEffect(()=>{
+   if(isError){
+     console.log(message)
+   }
+ if(!user){
+   navigate("/login")
+ }
+ dispatch(getGoals())
+
+ return()=>{
+   dispatch(reset())
+ }
+  
+ 
+ },[user,navigate,isError,message,dispatch])
 
   return (
     <div className={styles.main}>
@@ -43,7 +68,7 @@ const Slidebar = () => {
        {/* right div */}
        <div className={styles.navbarrightmain}>
           <div>
-             ABHISHEK WORKSPACE
+            <p style={{marginTop:"5px"}}> ABHISHEK WORKSPACE</p>
           </div>
           <div className={styles.upgradebtn}>
            <button >UPGRADE</button>
@@ -81,11 +106,11 @@ const Slidebar = () => {
             <Route path="/dashboard" element={<Dashboard/>}></Route>
            
             <Route path="/reports" element={<Reports/>}></Route>
-            <Route path="/projects" element={<Projects/>}></Route>
+            <Route path="/projectdiv" element={<Projectsdiv/>}></Route>
             <Route path="/team" element={<Team/>}></Route>
-            <Route path="/clients" element={<Client/>}></Route>
-            <Route path="/tags" element={<Tags/>}></Route>
-            <Route path="/settings" element={<Settings/>}></Route>
+            <Route path="/clients" element={<Clientdiv/>}></Route>
+            <Route path="/tags" element={<Tagsdiv/>}></Route>
+            <Route path="/settings" element={<Settingsdiv/>}></Route>
            </Routes>
        </div>
    </div>

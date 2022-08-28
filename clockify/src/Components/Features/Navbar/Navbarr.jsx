@@ -3,10 +3,15 @@ import { HashlinkPages } from "../Routes/Hashlinkpages"
 import {HashLink} from "react-router-hash-link"
 import styles from "../FeaturesStyle/Navbar.module.css"
 import { ChakraProvider } from "@chakra-ui/react"
-export const Navbar=()=>{
+import  Navbar  from "../../Home/Navbar"
+import Footer from "../../Home/Footer"
+
+export const Navbarr=()=>{
     return (
        <ChakraProvider>
+        <Navbar/>
         <div>
+
             <h2 style={{fontSize:"40px",padding:"25px",textAlign:"center"}}>Features</h2>
             <div className={styles.main}>
                 
@@ -54,6 +59,7 @@ export const Navbar=()=>{
             <iframe  src="https://www.youtube.com/embed/NMZhFs_b0Aw" title="Clockify Tour" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
         </div>
+        <Footer/>
         </ChakraProvider>
     )
 }

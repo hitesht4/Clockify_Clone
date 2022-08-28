@@ -13,14 +13,14 @@
 .main{
     width: 100%;
     height: 100vh;
-    background-color: black;
-    color:white;
+    background-color:white;
+    color:black;
     /* position: absolute; */
 }
 .Slidebar{
  height: 100%;
  width: 100%;
- border:1px solid greenyellow ;
+ /* border:1px solid greenyellow ; */
 }
 .slidingfuncbox{
     display: flex;
@@ -32,9 +32,12 @@
     justify-content: space-between;
     width: 100%;
     margin:auto;
+    border:1px solid silver;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
     text-align: center;
     /* position: fixed; */
-    background-color: black;
+   
+    color:black;
     height: 45px;
     margin:auto;
 
@@ -45,7 +48,7 @@
    
 }
 .navbar div{
-    border:1px solid black;
+    /* border:1px solid black; */
 
 }
 .navbarleftmain{
@@ -65,16 +68,16 @@
    
 }
 .upgradebtn button{
-    margin:auto;
-    color:skyblue;
-    background-color: rgb(39, 36, 36);
-    border-radius: 3px;
-    border: 1px solid skyblue;
-    font-size: 12px;
-    margin-top: 10px;
    
-    padding-left: 10px;
-    padding-right: 10px;
+    color:rgb(16, 173, 236);
+   
+    border-radius: 3px;
+    border: 1px solid rgb(4, 184, 255);
+    font-size: 15px;
+    margin-top: 7px;
+   /* padding: 10px; */
+    /* padding-left: 10px;
+    padding-right: 10px; */
 }
 .upgradebtn button:hover{
     color:white;
@@ -90,7 +93,7 @@
 .pages{
     width: 100%;
     height: 100vh;
-    background-color: rgb(87, 87, 85);
+  
 }
 .menuicons{
     margin-left: 10px;

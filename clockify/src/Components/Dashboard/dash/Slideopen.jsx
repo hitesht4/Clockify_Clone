@@ -10,12 +10,12 @@ import {GiThreeFriends} from 'react-icons/gi';
 
 import { NavLink } from 'react-router-dom';
 const navbaractive={
-  backgroundColor: "green",
-   color:"green"
+  backgroundColor: "black",
+   color:"rgb(35,192,254)"
 }
 const navbarnotactive={
-  backgroundColor:"red",
-  color:"red"
+  backgroundColor:"silver",
+  color:"black"
 }
 const Slideopen = () => {
   return (
@@ -24,14 +24,30 @@ const Slideopen = () => {
          <NavLink to="/dashboard/timetracker" style={({isActive}) => (
     isActive ? navbaractive: navbarnotactive
   )}>  <div ><FiClock className={styles.icons1}/></div></NavLink> 
-         <NavLink to="/dashboard/calender">  <div><VscCalendar  className={styles.icons1}/></div></NavLink>
-         <NavLink to="/dashboard/dashboard">   <div><BiGridAlt  className={styles.icons1}/></div></NavLink>
-         <NavLink to="/dashboard/reports"> <div><IoStatsChart  className={styles.icons1}/></div></NavLink>
-         <NavLink to="/dashboard/projects"> <div><FaFileAlt  className={styles.icons1}/></div></NavLink>
-         <NavLink to="/dashboard/team"> <div><FaUsers  className={styles.icons1}/></div></NavLink>
-         <NavLink to="/dashboard/clients">  <div><FaRegUserCircle  className={styles.icons1}/></div></NavLink>
-         <NavLink to="/dashboard/tags">  <div><BsTagFill  className={styles.icons1}/></div></NavLink>
-         <NavLink to="/dashboard/settings">  <div><IoSettingsOutline  className={styles.icons1}/></div></NavLink>
+         <NavLink to="/dashboard/calender" style={({isActive}) => (
+    isActive ? navbaractive: navbarnotactive
+  )}>  <div><VscCalendar  className={styles.icons1}/></div></NavLink>
+         <NavLink to="/dashboard/dashboard" style={({isActive}) => (
+    isActive ? navbaractive: navbarnotactive
+  )}>   <div><BiGridAlt  className={styles.icons1}/></div></NavLink>
+         <NavLink to="/dashboard/reports" style={({isActive}) => (
+    isActive ? navbaractive: navbarnotactive
+  )}> <div><IoStatsChart  className={styles.icons1}/></div></NavLink>
+         <NavLink to="/dashboard/projectdiv" style={({isActive}) => (
+    isActive ? navbaractive: navbarnotactive
+  )}> <div><FaFileAlt  className={styles.icons1}/></div></NavLink>
+         <NavLink to="/dashboard/team" style={({isActive}) => (
+    isActive ? navbaractive: navbarnotactive
+  )}> <div><FaUsers  className={styles.icons1}/></div></NavLink>
+         <NavLink to="/dashboard/clients" style={({isActive}) => (
+    isActive ? navbaractive: navbarnotactive
+  )}>  <div><FaRegUserCircle  className={styles.icons1}/></div></NavLink>
+         <NavLink to="/dashboard/tags" style={({isActive}) => (
+    isActive ? navbaractive: navbarnotactive
+  )}>  <div><BsTagFill  className={styles.icons1}/></div></NavLink>
+         <NavLink to="/dashboard/settings" style={({isActive}) => (
+    isActive ? navbaractive: navbarnotactive
+  )}>  <div><IoSettingsOutline  className={styles.icons1}/></div></NavLink>
         </div>
         </div>
   )
