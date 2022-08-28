@@ -1,0 +1,115 @@
+.Hero{
+    width:60%;
+    margin:00px auto;
+    text-align: center;
+    background-color: #f9fdff;
+    padding-top:50px;
+}
+.Container201{
+    background-color:#f9fdff;
+    text-align: center;
+}
+.Hero>h1{
+   font-weight: 480;
+   font-size: 40px;
+   padding:5px;
+}
+.Hero>p{ 
+    font-size:21px;
+    font-weight:480;
+    margin-bottom: -1px;
+    color:grey
+}
+.Stars{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap:10px;
+    padding:10px;
+}
+.Stars>p:nth-child(1){
+    font-weight: bold;
+    color:gold;
+    font-size: 20px;
+}
+.Stars>p:nth-child(2){
+    font-weight: lighter;
+    font-size: 15px;
+}
+.Span2{
+    color:#03a9f4;
+}
+.Stars2{
+    width:55%;
+    display:flex;
+    margin:auto;
+    margin-bottom: 15px;
+    justify-content: space-between;
+    align-items: center;
+    padding:10px;
+}
+.Info{
+    padding: 3px;
+    font-size:13px !important;
+    color:#03a9f4 !important;
+}
+.Info:hover{
+    text-decoration:1px underline;
+    cursor: pointer;
+}
+
+@media only screen and (min-width:480px)  and (max-width:1000px){
+.Hero{
+    width:85%;
+    padding-top:35px; 
+}
+.Hero>h1{
+   font-weight:500;
+   font-size: 32px;
+}
+.Hero>p{ 
+    font-weight: 500;
+    font-size:15px;
+    margin-bottom:0px;
+}
+.Stars>p:nth-child(1){
+    font-size: 18px;
+}
+.Stars>p:nth-child(2){
+    font-size: 13px;
+}
+.Stars2{
+    width:85%;
+    margin-bottom: 10px;
+    padding:10px;
+    font-size: 15px;
+}
+}
+
+@media only screen and (min-width:0px)  and (max-width:479px){
+ .Hero{
+    width:100%;
+    padding-top:25px; 
+}
+.Hero>h1{
+   font-weight:500;
+   font-size: 25px;
+}
+.Hero>p{ 
+    font-weight:500;
+    font-size:13px;
+    margin-bottom:0px;
+}
+.Stars>p:nth-child(1){
+    font-size: 16px;
+}
+.Stars>p:nth-child(2){
+    font-size: 13px;
+}
+.Stars2{
+    width:85%;
+    margin-bottom: 10px;
+    padding:10px;
+    font-size: 15px;
+}
+}

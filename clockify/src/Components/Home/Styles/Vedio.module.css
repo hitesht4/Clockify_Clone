@@ -1,0 +1,42 @@
+.Switch{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap:10px;
+    margin:auto;
+    width:10%;
+}
+.Vedio{
+   padding:20px 0px;
+   text-align: center;
+}
+
+@media only screen and (min-width:480px)  and (max-width:1000px){
+  .Vedio{
+   width:100%;
+   display: flex;
+   flex-direction: column;
+}
+  .Vedio>div{
+   width:80%;
+   margin:auto;
+}
+  .Vedio img{
+   width:100%;
+}
+}
+@media only screen and (min-width:0px)  and (max-width:479px){
+   .Vedio{
+   width:100%;
+   display: flex;
+   flex-direction: column;
+}
+  .Vedio>div{
+   width:80%;
+   margin:auto;
+}
+  .Vedio img{
+   width:100%;
+}
+}
+

@@ -1,0 +1,64 @@
+
+
+.select{
+    width: 120px;
+    height: 30px;
+    border-radius: 5px;
+    border: 0.5px solid gray;
+    margin-right: 10px;
+    background-color: white;
+}
+
+.serachbyname{
+    width: 150px;
+    height: 30px;
+    border-radius: 5px;
+    border: 0.5px solid gray;
+    background-color: white;
+}
+
+.top{
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    margin: auto;
+}
+
+.tag{
+    width: 150px;
+    height: 30px;
+    border-radius: 5px;
+    border: 0.5px solid gray;
+    background-color: white; 
+}
+
+.hello button{
+    width: 70px;
+    border-radius: 0px;
+    height: 30px;
+    margin-left: 10px;
+}
+
+.right{
+    margin-top: -15px;
+}
+
+.list{
+    width: 70%;
+    margin: auto;
+    background-color: rgb(214, 210, 210);
+    height: 35px;
+    margin-top: 20px;
+    text-align: left;
+}
+
+@media only screen and (min-width:200px) and (max-width:699px){
+    .top{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        justify-content: center;
+    }
+    .right{
+        margin-top: 15px;
+    }
+}

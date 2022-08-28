@@ -1,0 +1,71 @@
+.Nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height:80px;
+    padding:10px;
+    margin:auto 30px;
+}
+.Logo{
+    width:13%;
+}
+.Nav img{
+    width:100%;
+    height:100%;
+}
+.Navflex{
+    width:87%;
+    display:flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap:20px;
+}
+.Navflex h6:nth-child(1){
+    color:#b0b1b2;
+}
+.signUp{
+    color:#03a9f4 !important;
+    cursor: pointer;
+}
+.navW{
+    width:75%;
+    margin: auto;
+}
+
+@media only screen and (min-width:480px)  and (max-width:980px){
+.Nav{
+    height:75px;
+    padding:10px;
+    margin:auto 20px;
+    padding:5px;
+}
+.Logo{
+    width:23%;
+    height:100%;
+}
+.Navflex{
+    width:77%;
+}
+}
+@media only screen and (min-width:0px)  and (max-width:479px){
+.Nav{
+    height:75px;
+    padding:10px;
+    margin:auto 20px;
+    padding:5px;
+}
+.Logo{
+    width:30%;
+    height:100%;
+}
+.Navflex{
+    width:70%;
+}
+.Navflex h6:nth-child(1){
+ 
+    font-size: 12px;
+}
+.Navflex h6:nth-child(2){
+    font-size: 12px;
+}
+}

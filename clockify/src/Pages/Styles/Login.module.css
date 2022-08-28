@@ -1,0 +1,29 @@
+.grid{
+    height: 100%;
+    width: 99%;
+    left: 0;
+    top: 0;
+    margin:auto;
+    overflow: hidden;
+    position: fixed;
+    display:grid;
+    grid-template-columns:65% 35%;
+    grid-template-rows: 100%;
+}
+
+@media only screen and (min-width:480px)  and (max-width:980px){
+.grid{
+    grid-template-columns:100%;
+}
+.gradient{
+   display: none; 
+}
+}
+@media only screen and (min-width:0px)  and (max-width:479px){
+.grid{
+    grid-template-columns:100%;
+}
+.gradient{
+   display: none; 
+}
+}

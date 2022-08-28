@@ -1,0 +1,36 @@
+.main{
+    width: 57px;
+    margin:auto;
+    height: 100vh;
+   
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    border:1px solid silver;
+    /* border: 2px solid greenyellow; */
+}
+.icons1{
+    font-size: 30px;
+    padding-top: 7px;
+    margin:auto;
+
+}
+.iconsbox div{
+      height: 50px;
+      width: 50px;
+      
+      
+     
+     
+      /* border:1px solid red; */
+     
+      padding: 5px;
+
+      padding-left: 10px;
+      
+}
+.iconsbox div:hover{
+    cursor: pointer;
+  
+}
+.navlink{
+  
+}
