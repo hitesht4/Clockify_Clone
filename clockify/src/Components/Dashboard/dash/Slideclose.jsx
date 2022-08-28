@@ -1,5 +1,7 @@
-import React from 'react'
+import React, { useEffect } from 'react'
+import { useDispatch, useSelector } from 'react-redux'
 import { NavLink } from 'react-router-dom'
+import { getGoals } from '../../../features/goals/goalsSlice'
 import styles from "./STYLE/Slideclose.module.css"
 const navbaractive={
   backgroundColor: "",
@@ -10,7 +12,14 @@ const navbarnotactive={
   backgroundColor:"silver",
   color:"white"
 }
+
 const Slideclose = () => {
+  // const {user}=useSelector(state=>state.auth)
+  // const dispatch=useDispatch()
+  // useEffect(()=>{
+  //   if
+  // dispatch(getGoals())
+  // },[user])
   return (
     <div className={styles.main}>
         <div className={styles.iconsname}>

@@ -29,8 +29,10 @@ const navigate=useNavigate()
    navigate("/login")
  }
 
-
+ if(user){
   dispatch(getGoals())
+ }
+  
  
  
 
@@ -49,16 +51,7 @@ const navigate=useNavigate()
   </div>
   )
  }
-  else if(isError){
-    return (
-    <div className={styles.Body1}>
-      <TaskInput/>
-      <h1 className={styles.Load2}><Spinner/></h1>
-    </div>
-    )
-
-  
- }else{
+ else{
   return (
     <div className={styles.Body1}>
       <TaskInput/>
