@@ -1,0 +1,13 @@
+.main{
+    margin:auto;
+    margin-top: 60px;
+    width: 90%;
+    text-align: center;
+    /* background-color: red; */
+}
+.main h2{
+    font-size: 40px;
+}
+.main p{
+    font-size: 20px;
+}

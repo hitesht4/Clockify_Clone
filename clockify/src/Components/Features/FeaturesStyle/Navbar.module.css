@@ -1,0 +1,127 @@
+.optionsbox{
+    display: grid;
+    width: 300px;
+    grid-template-columns: repeat(3,120px);
+    grid-template-rows: repeat(2,40px);
+    gap:10px;
+}
+
+.optionsbox button{
+    width: 110px;
+    padding: 7px;
+    /* gap:10px */
+   
+}
+.options{
+    width: 400px;
+    /* border:2px solid black; */
+    margin:auto;
+    
+    gap:20px
+   
+}
+.optionsreport{
+ width: 230px;
+ /* border:1px solid yellowgreen; */
+ margin:auto;
+}
+.optionsboxreport{
+    display: grid;
+    /* margin:auto; */
+    text-align: center;
+    grid-template-columns: repeat(2,110px);
+    grid-template-rows: repeat(2,40px);
+    gap:10px
+}
+.optionsboxreport button{
+    width: 110px;
+    padding: 7px;   
+}
+.main{
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    margin:auto;
+    text-align: center;
+    /* border:1px solid red; */
+    justify-content: space-between;
+} 
+/* .main>div{
+    display: flex;
+    flex-wrap: wrap;
+    
+} */
+.main>h2{
+    font-size: 30px;
+}
+.main h4{
+    color:rgb(163, 152, 152);
+    padding:10px
+}
+.main button{
+    border:none;
+    border-radius: 4px;
+    background-color: rgb(226, 239, 244);
+}
+.main button:hover{
+   background-color: rgb(7, 174, 240);
+   color:white;
+   cursor: pointer;
+}
+.youtubebox{
+    width: 100%;
+    margin:auto;
+}
+.youtubebox iframe{
+    margin:auto;
+    height: 500px;;
+    width: 71%;
+}
+@media (max-width:800px) and (min-width:300px) {
+    .main{
+        /* background-color: yellow; */
+        width: 80%;
+        margin:auto;
+        /* margin:0; */
+
+    }
+    .optionsbox{
+        display: grid;
+        grid-template-columns: repeat(3,120px);
+        grid-template-rows: repeat(2,40px);
+        gap:10px;
+        
+    }
+    .options h4{
+        text-align: start;
+        padding: 10px;
+    }
+    .optionsboxreport{
+        display: grid;
+        /* margin:auto; */
+       
+      /* border: 1px solid red; */
+      /* margin-top: 20px; */
+     
+        grid-template-columns: repeat(2,110px);
+        grid-template-rows: repeat(2,40px);
+        gap:10px
+    }.optionsreport{
+        margin-top: 10px;
+        margin: 0;
+       
+       
+        /* border:1px solid black */
+    }
+    .optionsreport h4{
+      text-align: start;
+      padding: 10px; 
+         margin:0;
+    
+    }
+    .youtubebox iframe{
+        width: 95%;
+        height: 300px;
+    }
+    
+}

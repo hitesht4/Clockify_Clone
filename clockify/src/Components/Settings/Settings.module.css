@@ -1,0 +1,130 @@
+*{
+    padding: 0;
+    margin: 0;
+    left: 0;
+    right: 0;
+}
+/* .babubhaiya{
+    overflow: hidden;
+  
+ 
+} */
+.top{
+    text-align: left;
+    width: 70%;
+    margin: auto;
+}
+.got img{
+    width: 100px;
+    height: 80px;
+    border-radius: 50%;
+    border: 1px solid black;
+}
+.inpbtn{
+    visibility: hidden;
+}
+.logo>label{
+    background-color: rgb(10, 196, 243);
+    color: white;
+    height: 30px;
+    padding: 7px 10px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.logo{
+    display: flex;
+    gap: 2rem;
+    width: 70%;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.workspace{
+    width: 70%;
+    margin: auto;
+    text-align: left;
+    margin-top: 20px;
+}
+.workspace>input{
+    width: 400px;
+    height: 35px;
+    border: 0.5px solid grey;
+}
+
+.projects{
+    width: 70%;
+    margin: auto;
+    text-align: left;
+    margin-top: 20px;
+}
+
+.projects>input{
+    margin-right: 10px;
+    margin-left: 10px;
+}
+.organize{
+    width: 70%;
+    margin: auto;
+    text-align: left;
+    margin-top: 20px;
+}
+.organize>select{
+    width: 250px;
+    height: 40px;
+    background-color: white;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+.workspace{
+    width: 70%;
+    margin: auto;
+    text-align: left;
+    margin-top: 20px;
+}
+.workspace>input{
+    width: 250px;
+    height: 35px;
+}
+.workspace>button{
+    height: 35px;
+    width: 150px;
+    background-color: white;
+    color: rgb(10, 196, 243);
+    cursor: pointer;
+    border: 0.5px solid gray;
+}
+
+.currency{
+    width: 70%;
+    margin: auto;
+    text-align: left;
+    margin-top: 20px;
+}
+.currency>input{
+    width: 150px;
+    height: 35px;
+    border: 0.5px solid gray;
+}
+
+@media only screen and (min-width:200px) and (max-width:699px){
+    .workspace{
+        width: 100%;
+        margin: auto;
+        text-align: left;
+        margin-top: 20px;
+        margin-left: 95px;
+    }
+    .workspace>input{
+        width: 150px;
+        height: 35px;
+    }
+    .workspace>button{
+        height: 35px;
+        width: 70px;
+        background-color: white;
+        color: rgb(10, 196, 243);
+        cursor: pointer;
+        border: 0.5px solid gray;
+    }
+}

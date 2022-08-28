@@ -1,0 +1,44 @@
+.div{
+    background-color: rgb(255, 255, 255);
+    height:fit-content;
+    width: 90%;
+    margin: auto;
+    /* border:3px solid black; */
+}
+.div img{
+    width: 100%;
+}
+.Integrationsdiv{
+    margin:auto;
+    width: 70%;
+    border:2px solid white;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+.Integrationsdiv img{
+    width: 100%;
+    border-radius: 5px;
+    margin:auto;
+   
+}
+.Integrationsdiv:hover{
+   border-color: skyblue;
+   cursor: pointer;
+}
+
+.Integrationslogodiv{
+    margin:auto;
+    padding: 30px;
+    width: 40%;
+    margin-bottom: 20px;
+}
+
+@media (max-width:800px) and (min-width:300px){
+    .div{
+        width: 100%;
+        
+    }
+    .div img{
+        width: 97%;
+    }
+}

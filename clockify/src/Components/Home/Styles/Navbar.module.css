@@ -1,0 +1,97 @@
+.NavContainer{
+    display: flex;
+    justify-content: center;
+    padding:10px;
+    background-color: #f7fcff;
+}
+.Navbox{
+    width:80%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height:80px;
+    padding:10px;
+    margin:auto 30px;  
+}
+.Logo{
+    width:13%;
+    height:100%;
+}
+.Logo>img{
+    width:100%;
+    height:80%;
+    cursor: pointer;
+}
+.Navflex{
+    width:87%;
+    display:flex;
+    padding-left:30px;
+    justify-content:space-between;
+    align-items: center;
+}
+.Navflex h6:hover{
+    color:#03a9f4;
+    cursor:pointer;
+}
+.Navflex>div{
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+    gap:30px;
+}
+.navW{
+    width:75%;
+    margin: auto;
+}
+.bttn2{
+    padding:6px;
+    width:100px;
+    margin:8px;
+    border:1px solid #03a9f4;
+    background-color: white;
+    color:#03a9f4;
+}
+
+.bttn2:hover{
+    background-color: #3393dd;
+    color:white;
+}
+
+@media only screen and (min-width:665px)  and (max-width:980px){
+.NavContainer{
+   width:100%;
+}
+.Navbox{
+    width:100%;
+    height:70px;
+}
+.Logo>img{
+    width:100%;
+    height:80%;
+    cursor: pointer;
+}
+}
+@media only screen and (min-width:0px)  and (max-width:664px){
+.NavContainer{
+   width:100%;
+}
+.Navbox{
+    width:100%;
+    margin:auto;
+}
+.Navflex>div{
+    gap:10px;
+}
+.Navflex h6{
+    font-size: 13px;
+}
+.bttn2{
+    padding:4px;
+    width:50px;
+    font-size: 10px;
+    margin:8px;
+}
+.Logo>img{
+    height:90%;
+}
+}

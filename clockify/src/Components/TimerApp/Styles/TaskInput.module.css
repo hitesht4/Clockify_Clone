@@ -1,0 +1,93 @@
+.Task{
+  width:70%;
+  margin: auto;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.Desc{
+  width:100%;
+  margin:auto;
+  margin-bottom: 30px;
+  padding: 14px 20px;
+  background-color:#fff;
+  display:flex;
+  gap: 10px;
+  align-items: center; 
+}
+.Desc>input{
+  padding:10px;
+  border:none;
+  width:60%;
+}
+.Edit{
+    display: flex;
+    font-size: 20px;
+    align-items: center;
+    gap:20px;
+}
+.Edit>h6{
+    margin-top: 8px;
+}
+.Projects{
+    padding-left:30px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 22px;
+    color:#1cb9f7;
+    gap:10px;
+}
+.Projects>h6{
+  margin-top: 8px;
+}
+.Tags{
+    padding:5px;
+    color:slategrey;
+    margin:0px 18px;
+}
+.Tags:hover{
+    cursor: pointer;
+    color:#1cb9f7;
+    padding:5px;
+    color:grey;
+    border-left:1px light grey;
+    border-right:1px light grey;
+}
+.Time{
+    display: flex;
+    gap:20px;
+}
+.Time>input{
+   width:20%;
+}
+.TimerBtn{
+  width:110px;
+  padding:8px;
+  border: none;
+  background-color: #1cb9f7;
+  color: #fff;
+}
+.Blue{
+    color:white;
+    padding:7px;
+    width:100px;
+    background-color: #1cb9f7;
+    border:none;
+}
+.Red{
+    color:white;
+    padding:7px;
+    width:100px;
+    background-color:#f44336;
+    border:none;
+}
+.Timer{
+  display: flex;
+  gap:20px;
+  font-size: larger;
+  text-align: center;
+}
+.Timer>h6{
+  margin-top: 10px;
+  font-size: 20px;
+}

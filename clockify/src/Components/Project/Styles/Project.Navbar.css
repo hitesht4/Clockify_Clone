@@ -1,0 +1,67 @@
+body {
+  margin: 0;
+  font-family: Roboto, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+    Helvetica Neue, Arial, Noto Sans, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", Segoe UI Symbol, "Noto Color Emoji";
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #333;
+  text-align: left;
+  background-color: #f2f6f8;
+}
+.project_navbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.project_heading_div {
+  flex-basis: 0;
+  flex-grow: 1;
+  max-width: 100%;
+}
+.project_heading {
+  text-transform: capitalize;
+  color: #666;
+  margin-bottom: 0;
+  font-size: 1.714rem;
+  font-weight: 400;
+  line-height: 1.5;
+}
+.project_header_right {
+  flex-basis: 0;
+  flex-grow: 1;
+  max-width: 100%;
+}
+.project_create_div {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.project_create_link {
+  text-transform: uppercase;
+  min-width: 7.143rem;
+  color: #fff;
+  background-color: #03a9f4;
+  border-color: #03a9f4;
+  display: inline-block;
+  font-weight: 400;
+  color: #333;
+  text-align: center;
+  vertical-align: middle;
+  border: 1px solid transparent;
+  padding: 0.608rem 0.75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: 5px;
+  text-decoration: none;
+}
+.project_span {
+  background-color: #03a9f4;
+}
+
+@media (min-width: 768px) {
+  .project_span {
+    display: inline;
+  }
+}

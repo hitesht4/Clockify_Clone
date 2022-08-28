@@ -1,0 +1,112 @@
+* {
+  padding: 0;
+  margin: 0;
+  left: 0;
+  right: 0;
+  
+}
+
+.clients_heading {
+  margin-left: 14.2rem;
+  color: #666666;
+}
+.Clients_select {
+  width: 120px;
+  height: 30px;
+  border-radius: 5px;
+  border: 0.5px solid gray;
+  margin-right: 10px;
+  background-color: white;
+}
+
+.Clients_serachbyname {
+  width: 150px;
+  height: 30px;
+  border-radius: 5px;
+  border: 0.5px solid gray;
+  background-color: white;
+}
+
+.Clients_top {
+  display: flex;
+  justify-content: space-between;
+  width: 70%;
+  margin: auto;
+}
+
+.Clients {
+  width: 150px;
+  height: 30px;
+  border-radius: 5px;
+  border: 0.5px solid gray;
+  background-color: white;
+}
+
+.Clients_button {
+  width: 70px;
+  border-radius: 5px;
+  width: 90px;
+  font-size: larger;
+  margin-left: 10px;
+  border: none;
+  background-color: #57c4f5;
+  border-color: #57c4f5;
+  color: white;
+}
+
+.Clients_right {
+  margin-top: -15px;
+}
+
+.Clients_list {
+  width: 70%;
+  margin: auto;
+  background-color: #e4eaee;
+  height: 35px;
+  margin-top: 20px;
+}
+
+.Clients_list_left {
+  background-color: #e4eaee;
+  height: 35px;
+  text-align: left;
+  color: #aaa2a9;
+}
+
+.Clients_list_right {
+  background-color: #e4eaee;
+  color: #aaa2a9;
+  height: 35px;
+  margin-left: 50%;
+}
+
+@media only screen and (min-width: 200px) and (max-width: 699px) {
+  .Clients_top {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-content: center;
+  }
+  .Clients_right {
+    margin-top: 15px;
+  }
+  .clients_heading {
+    text-align: left;
+  }
+}
+
+@media only screen and (min-width: 700px) and (max-width: 1400px) {
+  .Clients_select,
+  .Clients_top {
+    display: flex;
+    /* grid-template-columns: repeat(1, 1fr); */
+    justify-content: center;
+    text-align: left;
+  }
+  .Clients_right {
+    margin-top: 15px;
+    text-align: left;
+  }
+  .clients_heading {
+    margin: 2rem 0rem 2rem 26rem;
+  }
+}
