@@ -10,7 +10,7 @@ import EmptyTask from './EmptyTask';
 import { getGoals} from '../../features/goals/goalsSlice';
 import {reset} from "../../features/auth/authSlice"
 import { useNavigate } from 'react-router-dom';
-import Spinner  from '../Spinner.jsx/Spinner';
+import Spinner  from '../spinner/Spinner';
 
 
 const TasksApp = () => {

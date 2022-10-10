@@ -22,7 +22,7 @@ import Clientdiv from '../pages/Client';
 import Tagsdiv from '../pages/Tags';
 import Settingsdiv from '../pages/Settings';
 import Projectsdiv from '../pages/Projects';
-import Spinner from "../../Spinner.jsx/Spinner"
+import Spinner from "../../spinner/Spinner"
 import { useDispatch, useSelector } from 'react-redux';
 import { getGoals } from '../../../features/goals/goalsSlice';
 import{reset} from "../../../features/auth/authSlice"

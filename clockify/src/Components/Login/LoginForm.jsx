@@ -6,7 +6,7 @@ import { UseUserAuth } from '../../context/UserAuthContext';
 import {useNavigate} from "react-router-dom"
 import {toast} from "react-toastify"
 import { useDispatch, useSelector } from 'react-redux';
-import  Spinner  from '../Spinner.jsx/Spinner';
+import  Spinner  from '../spinner/Spinner';
 import { login,reset } from '../../features/auth/authSlice';
 
 const LoginForm = ({label,checkBox}) => {

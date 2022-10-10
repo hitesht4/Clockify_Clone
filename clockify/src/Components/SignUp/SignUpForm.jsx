@@ -5,7 +5,7 @@ import {FcGoogle} from 'react-icons/fc';
 import { useDispatch, useSelector } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
 import { toast } from 'react-toastify';
-import  Spinner  from '../Spinner.jsx/Spinner';
+import  Spinner  from '../spinner/Spinner';
 
 import { register,reset } from '../../features/auth/authSlice';
 import { UseUserAuth } from '../../context/UserAuthContext';
