@@ -14,7 +14,7 @@ import Vedio from "../Components/Home/Vedio";
 const Home = () => {
   return (
     <div>
-      {/* <Navbar/> */}
+      <Navbar />
       <Hero />
       <Vedio />
       <FeaturesSec />
