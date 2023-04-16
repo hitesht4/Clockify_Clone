@@ -8,7 +8,7 @@ const cors = require("cors");
 const app = express();
 
 app.get("/", (req, res) => {
-  res.send("Welcome to clockify Backend");
+  res.send("Hello Welcome to clockify Backend");
 });
 
 app.use(cors());
