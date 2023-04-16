@@ -9,7 +9,6 @@ const generateToken = (id) => {
     expiresIn: "20d",
   });
 };
-
 const registerUser = asyncHandler(async (req, res) => {
   const { email, password } = req.body;
   if (!email || !password) {
