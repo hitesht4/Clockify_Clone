@@ -52,12 +52,6 @@ const Slidebar = () => {
         </div>
         {/* right div */}
         <div className={styles.navbarrightmain}>
-          <div>
-            <p style={{ marginTop: "5px" }}> ABHISHEK WORKSPACE</p>
-          </div>
-          <div className={styles.upgradebtn}>
-            <button>UPGRADE</button>
-          </div>
           <div style={{ weight: "20px", marginTop: "6px" }}>
             <BsQuestionCircle fontSize="27px" />
           </div>
