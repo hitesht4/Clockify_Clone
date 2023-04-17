@@ -1,93 +1,138 @@
-.Task{
-  width:70%;
+.Task {
+  width: 70%;
   margin: auto;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 }
 
-.Desc{
-  width:100%;
-  margin:auto;
-  margin-bottom: 30px;
-  padding: 14px 20px;
-  background-color:#fff;
-  display:flex;
-  gap: 10px;
-  align-items: center; 
+.Desc {
+  width: 100%;
+  margin: auto;
+  margin-bottom: 2rem;
+  padding: 1rem;
+  background-color: #fff;
+  display: flex;
+  gap: 0.7rem;
+  align-items: center;
 }
-.Desc>input{
-  padding:10px;
-  border:none;
-  width:60%;
+.Desc > input {
+  padding: 0.6rem;
+  border: none;
+  width: 60%;
 }
-.Edit{
-    display: flex;
-    font-size: 20px;
-    align-items: center;
-    gap:20px;
+
+.Projects {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 1.4rem;
+  color: #1cb9f7;
+  gap: 1rem;
 }
-.Edit>h6{
-    margin-top: 8px;
+.Projects > h6 {
+  padding: 0;
+  margin: 0;
 }
-.Projects{
-    padding-left:30px;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    font-size: 22px;
-    color:#1cb9f7;
-    gap:10px;
+.Tags {
+  color: slategrey;
 }
-.Projects>h6{
-  margin-top: 8px;
+.Tags:hover {
+  cursor: pointer;
+  color: #1cb9f7;
+  color: grey;
+  border-left: 1px light grey;
+  border-right: 1px light grey;
 }
-.Tags{
-    padding:5px;
-    color:slategrey;
-    margin:0px 18px;
-}
-.Tags:hover{
-    cursor: pointer;
-    color:#1cb9f7;
-    padding:5px;
-    color:grey;
-    border-left:1px light grey;
-    border-right:1px light grey;
-}
-.Time{
-    display: flex;
-    gap:20px;
-}
-.Time>input{
-   width:20%;
-}
-.TimerBtn{
-  width:110px;
-  padding:8px;
+
+.TimerBtn {
+  width: 5rem;
+  padding: 0.5rem;
   border: none;
   background-color: #1cb9f7;
   color: #fff;
 }
-.Blue{
-    color:white;
-    padding:7px;
-    width:100px;
-    background-color: #1cb9f7;
-    border:none;
+.Blue {
+  color: white;
+  padding: 0.5rem;
+  width: 7.5rem;
+  background-color: #1cb9f7;
+  border: none;
 }
-.Red{
-    color:white;
-    padding:7px;
-    width:100px;
-    background-color:#f44336;
-    border:none;
+.Red {
+  color: white;
+  padding: 0.5rem;
+  width: 7.5rem;
+  background-color: #f44336;
+  border: none;
 }
-.Timer{
+.Timer {
   display: flex;
-  gap:20px;
+  justify-content: center;
+  align-items: center;
+  gap: 1.2rem;
   font-size: larger;
   text-align: center;
 }
-.Timer>h6{
-  margin-top: 10px;
-  font-size: 20px;
+.Timer > h6 {
+  padding: 0;
+  margin: 0;
+}
+@media only screen and (max-width: 980px) {
+  .Tags {
+    display: none;
+  }
+  .Projects {
+    display: none;
+  }
+  .Desc > input {
+    padding: 0.6rem;
+    border: none;
+    width: 60%;
+    font-size: 0.7rem;
+  }
+  .Task {
+    width: 80%;
+  }
+  .TaskHead {
+    width: 80%;
+  }
+  .Desc {
+    padding: 0.5rem;
+  }
+  .Blue {
+    width: 6rem;
+  }
+  .Red {
+    width: 6rem;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .Tags {
+    display: none;
+  }
+  .Projects {
+    display: none;
+  }
+  .Desc > input {
+    padding: 0.6rem;
+    border: none;
+    width: 60%;
+    font-size: 0.7rem;
+  }
+  .Task {
+    width: 90%;
+  }
+  .TaskHead {
+    width: 90%;
+  }
+  .Desc {
+    padding: 0.5rem;
+  }
+  .Blue {
+    padding: 0.2rem;
+    width: 4rem;
+  }
+  .Red {
+    padding: 0.2rem;
+    width: 4rem;
+  }
 }

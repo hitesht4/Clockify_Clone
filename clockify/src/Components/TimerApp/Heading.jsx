@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { FaRegEdit } from "react-icons/fa";
 import styles from "./Styles/TaskComp.module.css";
 
@@ -7,19 +7,19 @@ const Heading = () => {
   let h = day.getHours();
   let m = day.getMinutes();
   let s = day.getSeconds();
-  if (day.getDay() == 0) {
+  if (day.getDay() === 0) {
     day = "Sunday";
-  } else if (day.getDay() == 1) {
+  } else if (day.getDay() === 1) {
     day = "Monday";
-  } else if (day.getDay() == 2) {
+  } else if (day.getDay() === 2) {
     day = "Tuesday";
-  } else if (day.getDay() == 3) {
+  } else if (day.getDay() === 3) {
     day = "Wednesday";
-  } else if (day.getDay() == 4) {
+  } else if (day.getDay() === 4) {
     day = "Thursday";
-  } else if (day.getDay() == 5) {
+  } else if (day.getDay() === 5) {
     day = "Friday";
-  } else if (day.getDay() == 6) {
+  } else if (day.getDay() === 6) {
     day = "Saturday";
   }
 

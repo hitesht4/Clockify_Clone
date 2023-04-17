@@ -1,42 +1,43 @@
-.Load{
-    text-align: center;
-    margin:100px auto;
-    color:green;
+.Body1 {
+  background-color: #f2f6f8;
+  min-height: 100vh;
+  padding-top: 30px;
 }
-.Load2{
-    text-align: center;
-    margin:100px auto;
-    color:red;
+.Empty {
+  padding: 2rem;
+  width: 25%;
+  margin: 2rem auto;
+  background-color: #fff;
+  text-align: center;
 }
-.Body1{
-    background-color: #f2f6f8;
-    height:100vh;
-    padding-top: 30px;
+.Empty > p {
+  padding: 1.2rem;
 }
-.Empty{
-    padding:30px;
-    width:25%;
-    margin:30px auto;
-    background-color: #fff;
-    text-align: center;
+.Empty > img {
+  width: 70%;
+  height: 25%;
 }
-.Empty>p{
-    padding:20px;
+.AppFlex {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
 }
-.Empty>img{
-    width:70%;
-    height:25%;
+.sky {
+  border-top: 0.5px solid grey;
+  color: #1cb9f7;
+  cursor: pointer;
+  padding: 10px;
 }
-.AppFlex{
-    display: flex;
-    gap:25px;
-    align-items: center;
-    justify-content: center;
-    width:100%;
+@media only screen and (max-width: 980px) {
+  .Empty {
+    width: 65%;
+  }
 }
-.sky{
-    border-top:0.5px solid grey;
-    color:#1cb9f7;
-    cursor: pointer;
-    padding:10px;
+
+@media only screen and (max-width: 600px) {
+  .Empty {
+    width: 85%;
+  }
 }
