@@ -46,19 +46,22 @@ To run this application on your local system
 
 
   ### Home Page
-  <img width="992" alt="Home2" src="https://user-images.githubusercontent.com/97459069/187060501-df87fa20-d96f-451d-858d-d68d7f4f25b9.PNG">
+  <img width="1069" alt="Home" src="https://user-images.githubusercontent.com/97459069/232349037-bb078cf8-040c-4ada-9e1d-a4f4c25a7e86.PNG">
 
   ### Downloads Section
-  <img width="963" alt="Downloads" src="https://user-images.githubusercontent.com/97459069/187060238-8d320b8f-e71d-4e96-b86e-f5d618914b4f.PNG">
+  <img width="1068" alt="Downloads" src="https://user-images.githubusercontent.com/97459069/232349064-a011d62e-9feb-41b6-b73b-8cfe62dbdfaa.PNG">
 
   ### Features Section
-  <img width="1015" alt="Features" src="https://user-images.githubusercontent.com/97459069/187060262-5724e076-e800-4a5a-bad3-774a939e4410.PNG">
+  <img width="1070" alt="Features" src="https://user-images.githubusercontent.com/97459069/232349072-0a4a2539-934d-4372-93ef-7a1ddf077a81.PNG">
 
   ### Login Page
-  <img width="1008" alt="Login" src="https://user-images.githubusercontent.com/97459069/187060508-41b0df05-33fc-4bac-821d-db698f6fc999.PNG">
+  <img width="1080" alt="Login" src="https://user-images.githubusercontent.com/97459069/232349078-10cc0a8e-273b-44d2-86c6-362b20a6523e.PNG">
 
   ### Signup Page
-<img width="1008" alt="Signup" src="https://user-images.githubusercontent.com/97459069/187060529-91beae2e-ba2d-4f76-afd9-6f961b9ac1fc.PNG">
+  <img width="1067" alt="signup" src="https://user-images.githubusercontent.com/97459069/232349131-c7368a3d-8ab7-4b7e-a17b-a7371a48f152.PNG">
+
+  ### Dashboard
+  <img width="1071" alt="dashboard" src="https://user-images.githubusercontent.com/97459069/232349154-94adfba3-5603-462b-8c4d-28ac5e34b840.PNG">
 
 
 ## Authors
